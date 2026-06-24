@@ -6,11 +6,7 @@ A collection of standalone static HTML files covering EverQuest Legends (EQL) cl
 
 | File | Purpose |
 |------|---------|
-| `EQL Ultimate Beta Guide.html` | The definitive 15-trio ranked guide — sticky nav, scroll progress bar, Chart.js radar charts, Font Awesome icons, structured data/SEO meta. **Start here.** |
-| `CLAUD EQL.html` | Claude's Top 10 EQ Legends class trios — dark fantasy design, Cinzel/Spectral fonts, no charts |
-| `Forge_Verdict_EQL.html` | Cross-AI verdict grading Claude's top 10 trios — Chart.js radar charts, ember particle effects |
-| `GROK EQL.html` | Grok's tier list — Tailwind CSS, retro Press Start 2P font, neon green/purple palette |
-| `GEMINI EQL.html` | Gemini's tier list — minimal Segoe UI, GitHub dark palette |
+| `EQL Ultimate Beta Guide.html` | The definitive 15-trio ranked guide — sticky nav, scroll progress bar, Chart.js radar charts, Font Awesome icons, structured data/SEO meta |
 
 ## The Guide
 
