@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="The definitive EverQuest Legends beta guide: Top 15 three-class combinations ranked by survival, DPS, solo-viability, and D4 raid performance. Launching July 1, 2026." />
+<meta name="keywords" content="EverQuest Legends, EQL beta, class combo, tier list, multiclass guide, July 2026, Norrath, three-class" />
+<meta property="og:title" content="EverQuest Legends — Top 15 Beta Class Combinations | Ultimate Guide" />
+<meta property="og:description" content="15 three-class trios ranked with radar charts, battle maps, and race guides. Built for the July 1 beta launch." />
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image" />
+<title>EverQuest Legends — Top 15 Class Trios | Ultimate Beta Guide 2026</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;900&family=Cinzel+Decorative:wght@700;900&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"Article",
+  "headline":"EverQuest Legends — Top 15 Beta Class Combinations Guide",
+  "description":"The definitive ranking of the top 15 three-class combinations for EverQuest Legends beta, launching July 1, 2026.",
+  "datePublished":"2026-06-22","dateModified":"2026-06-22",
+  "author":{"@type":"Organization","name":"EQL Theorycraft Collective"},
+  "keywords":["EverQuest Legends","EQL beta","class combinations","tier list","2026","MMORPG"]
+}
+</script>
+
+<style>
+:root{
+  --void:#060809; --ink:#0b0f12; --panel:#111820; --panel-2:#151f2a;
+  --edge:#1e2e3d; --edge-bright:#2a4258;
+  --parch:#e4d8c0; --parch-dim:#9fa897; --muted:#566170;
+  --gold:#c49a3c; --gold-bright:#f0cc72; --gold-dim:#7a5e1e;
+  --teal:#42c49a; --teal-dim:#1f6650; --teal-dark:#133d30;
+  --ember:#d0683a; --blood:#8e3028;
+  --s:#f0cc72; --s-rgb:240,204,114;
+  --a:#5ddbb0; --a-rgb:93,219,176;
+  --b:#7ab8dc; --b-rgb:122,184,220;
+  --maxw:1240px;
+  --shadow:0 24px 64px rgba(0,0,0,.65);
+  --r:8px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{
+  background:var(--void);color:var(--parch);
+  font-family:'Spectral',Georgia,serif;font-size:1.1rem;line-height:1.7;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  background-image:
+    radial-gradient(1400px 900px at 0% -5%,rgba(66,196,154,.07) 0,transparent 60%),
+    radial-gradient(1200px 700px at 100% 0%,rgba(196,154,60,.10) 0,transparent 55%),
+    radial-gradient(900px 900px at 50% 140%,rgba(142,48,40,.06) 0,transparent 60%);
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode:overlay;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;z-index:2;}
+::selection{background:rgba(240,204,114,.25);color:#fff;}
+
+/* PROGRESS */
+#progress-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--gold));z-index:300;width:0;transition:width .1s linear;}
+
+/* SKIP */
+.skip{position:absolute;top:-60px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--void);padding:8px 18px;border-radius:0 0 7px 7px;font-family:'Cinzel',serif;font-weight:700;font-size:13px;z-index:400;text-decoration:none;transition:top .2s;}
+.skip:focus{top:0;}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:rgba(6,8,9,.9);border-bottom:1px solid var(--edge);backdrop-filter:blur(16px) saturate(200%);-webkit-backdrop-filter:blur(16px) saturate(200%);}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;height:58px;gap:14px;}
+.nav-logo{font-family:'Cinzel',serif;font-weight:700;font-size:13.5px;color:var(--gold-bright);letter-spacing:.06em;text-decoration:none;white-space:nowrap;}
+.nav-links{display:flex;align-items:center;gap:2px;list-style:none;overflow-x:auto;scrollbar-width:none;}
+.nav-links::-webkit-scrollbar{display:none;}
+.nav-links a{font-family:'Cinzel',serif;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:6px 11px;border-radius:3px;color:var(--parch-dim);text-decoration:none;transition:color .2s,background .2s;white-space:nowrap;}
+.nav-links a:hover{color:var(--gold-bright);background:rgba(240,204,114,.08);}
+.nav-badge{font-family:'JetBrains Mono',monospace;font-size:10px;background:rgba(66,196,154,.12);border:1px solid var(--teal-dim);color:var(--teal);padding:5px 12px;border-radius:20px;white-space:nowrap;display:flex;align-items:center;gap:7px;}
+.nlive{width:7px;height:7px;background:var(--teal);border-radius:50%;animation:blink 2s ease-in-out infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:.35;}}
+
+/* HERO */
+header.hero{position:relative;text-align:center;padding:104px 24px 70px;overflow:hidden;border-bottom:1px solid var(--edge);}
+.hero-glow{position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(720px 380px at 50% 0%,rgba(240,204,114,.18) 0,transparent 70%);}
+#embers{position:absolute;inset:0;z-index:0;pointer-events:none;}
+.ember{position:absolute;bottom:-20px;border-radius:50%;background:var(--ember);opacity:0;animation:rise linear infinite;}
+@keyframes rise{0%{transform:translateY(0) scale(1);opacity:0;}8%{opacity:.9;}100%{transform:translateY(-85vh) translateX(var(--drift,0px)) scale(.2);opacity:0;}}
+.hero-content{position:relative;z-index:2;}
+.kicker{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.56em;text-transform:uppercase;color:var(--teal);margin-bottom:24px;font-weight:600;}
+h1.title{font-family:'Cinzel Decorative','Cinzel',serif;font-weight:900;font-size:clamp(40px,9.5vw,118px);line-height:.9;color:var(--gold-bright);text-shadow:0 4px 0 #4a3410,0 0 70px rgba(240,204,114,.32);margin-bottom:14px;}
+.hero-sub{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(13px,2.2vw,20px);letter-spacing:.16em;text-transform:uppercase;color:var(--parch);margin-bottom:30px;}
+.hero-note{max-width:800px;margin:0 auto 38px;color:var(--parch-dim);font-size:16.5px;font-style:italic;line-height:1.65;}
+.meta-row{display:flex;gap:10px 12px;justify-content:center;flex-wrap:wrap;margin-bottom:40px;}
+.pill{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:8px 16px;border:1px solid var(--edge-bright);border-radius:3px;color:var(--parch-dim);background:rgba(17,24,32,.65);backdrop-filter:blur(5px);}
+.pill b{color:var(--gold-bright);font-weight:700;}
+
+/* COUNTDOWN */
+.cd-label{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--teal);margin-bottom:14px;}
+.cd-box{display:inline-flex;border:1px solid var(--edge-bright);border-radius:7px;overflow:hidden;margin-bottom:6px;background:rgba(17,24,32,.5);}
+.cd-unit{padding:14px 22px;border-right:1px solid var(--edge);text-align:center;min-width:84px;}
+.cd-unit:last-child{border-right:none;}
+.cd-num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:38px;line-height:1;color:var(--gold-bright);display:block;}
+.cd-lab{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin-top:6px;display:block;}
+.cd-note{font-family:'Cinzel',serif;font-size:12.5px;color:var(--parch-dim);margin-top:8px;}
+.live-msg{font-family:'Cinzel',serif;font-size:20px;letter-spacing:.1em;color:var(--gold-bright);text-shadow:0 0 30px rgba(240,204,114,.5);}
+
+/* SECTIONS */
+section{padding:66px 0 10px;}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:9px;}
+.sec-num{font-family:'JetBrains Mono',monospace;color:var(--teal-dim);font-size:12px;letter-spacing:.24em;flex-shrink:0;}
+h2{font-family:'Cinzel',serif;font-weight:700;color:var(--gold);font-size:clamp(22px,3.5vw,34px);letter-spacing:.025em;}
+.rule{height:1px;background:linear-gradient(90deg,var(--edge-bright),transparent);margin:8px 0 30px;}
+.lede{color:var(--parch-dim);font-size:17px;max-width:860px;margin-bottom:28px;}
+
+/* LIMITS */
+.limits{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}
+.lcard{background:linear-gradient(180deg,var(--panel),var(--ink));border:1px solid var(--edge);border-left:3px solid var(--teal-dim);border-radius:5px;padding:18px 20px;opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s;}
+.lcard.show{opacity:1;transform:none;}
+.lcard h3{font-family:'Cinzel',serif;font-size:13px;color:var(--teal);margin-bottom:7px;letter-spacing:.05em;}
+.lcard p{font-size:14px;color:var(--parch-dim);line-height:1.55;}
+
+/* TIER LEGEND */
+.tier-leg{display:flex;gap:18px;flex-wrap:wrap;padding:16px 22px;background:var(--panel);border:1px solid var(--edge);border-radius:6px;margin-bottom:30px;}
+.tleg{display:flex;align-items:center;gap:10px;font-family:'Cinzel',serif;font-size:13px;color:var(--parch-dim);}
+.tdot{width:13px;height:13px;border-radius:50%;flex-shrink:0;}
+.tdot.s{background:var(--s);box-shadow:0 0 10px rgba(var(--s-rgb),.65);}
+.tdot.a{background:var(--a);}
+.tdot.b{background:var(--b);}
+
+/* LADDER */
+.ladder{display:flex;flex-direction:column;gap:11px;margin-bottom:28px;}
+.lrow{display:grid;grid-template-columns:82px 1fr;gap:14px;align-items:stretch;background:linear-gradient(180deg,var(--panel),var(--ink));border:1px solid var(--edge);border-radius:7px;padding:12px 14px;position:relative;overflow:hidden;opacity:0;transform:translateX(-14px);transition:opacity .5s,transform .5s;}
+.lrow.show{opacity:1;transform:none;}
+.lrow::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;}
+.lrow.s::before{background:var(--s);box-shadow:0 0 16px rgba(var(--s-rgb),.5);}
+.lrow.a::before{background:var(--a);}
+.lrow.b::before{background:var(--b);}
+.tletter{display:flex;align-items:center;justify-content:center;font-family:'Cinzel Decorative',serif;font-weight:900;font-size:48px;border-radius:5px;}
+.lrow.s .tletter{color:var(--s);background:rgba(var(--s-rgb),.09);text-shadow:0 0 22px rgba(var(--s-rgb),.5);}
+.lrow.a .tletter{color:var(--a);background:rgba(var(--a-rgb),.08);}
+.lrow.b .tletter{color:var(--b);background:rgba(var(--b-rgb),.08);}
+.tchips{display:flex;gap:9px;flex-wrap:wrap;align-items:center;}
+.lchip{font-family:'Cinzel',serif;font-size:12.5px;color:var(--parch);padding:7px 12px;border:1px solid var(--edge-bright);border-radius:4px;background:rgba(0,0,0,.28);transition:all .2s ease;display:flex;align-items:center;gap:8px;text-decoration:none;}
+.lchip:hover{transform:translateY(-2px);border-color:var(--gold);background:rgba(var(--s-rgb),.08);}
+.lchip .r{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold-bright);background:rgba(0,0,0,.45);padding:2px 6px;border-radius:3px;}
+
+/* FILTER */
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px;align-items:center;}
+.fl{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-right:4px;}
+.fbtn{font-family:'Cinzel',serif;font-size:11.5px;letter-spacing:.07em;cursor:pointer;padding:8px 16px;border:1px solid var(--edge-bright);border-radius:3px;color:var(--parch-dim);background:rgba(0,0,0,.25);transition:all .2s;user-select:none;}
+.fbtn:hover{color:#fff;border-color:var(--gold);background:rgba(var(--s-rgb),.06);}
+.fbtn.active{background:rgba(var(--s-rgb),.13);border-color:var(--gold);color:var(--gold-bright);}
+
+/* BUILD CARDS */
+.builds{display:flex;flex-direction:column;gap:22px;}
+.bcard{position:relative;background:linear-gradient(165deg,var(--panel-2),var(--ink) 75%);border:1px solid var(--edge);border-radius:var(--r);padding:24px 26px 22px;box-shadow:var(--shadow);overflow:hidden;transition:opacity .35s,transform .25s;opacity:0;transform:translateY(18px);}
+.bcard.show{opacity:1;transform:none;}
+.bcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;border-radius:8px 0 0 8px;}
+.bcard.s::before{background:linear-gradient(180deg,var(--s),var(--gold));}
+.bcard.a::before{background:linear-gradient(180deg,var(--a),var(--teal-dim));}
+.bcard.b::before{background:linear-gradient(180deg,var(--b),#2a4e6a);}
+.bcard.hidden{display:none!important;}
+
+.ctop{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+.rankwrap{display:flex;align-items:center;gap:14px;}
+.rnum{font-family:'Cinzel Decorative','Cinzel',serif;font-weight:900;font-size:56px;line-height:1;color:var(--gold-bright);text-shadow:0 2px 0 #4a3410,0 0 26px rgba(240,204,114,.22);}
+.bcard.a .rnum{color:var(--a);text-shadow:0 2px 0 #113e2a;}
+.bcard.b .rnum{color:var(--b);text-shadow:0 2px 0 #152e40;}
+.trio{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(17px,2.5vw,24px);color:var(--parch);line-height:1.2;margin-bottom:4px;}
+.nick{font-family:'Spectral',serif;font-style:italic;font-weight:400;font-size:14.5px;color:var(--teal);}
+.tbadge{font-family:'Cinzel',serif;font-weight:700;font-size:11px;letter-spacing:.14em;padding:6px 14px;border-radius:2px;text-transform:uppercase;align-self:flex-start;flex-shrink:0;white-space:nowrap;}
+.tbadge.s{background:rgba(var(--s-rgb),.14);border:1px solid var(--s);color:var(--s);}
+.tbadge.a{background:rgba(var(--a-rgb),.12);border:1px solid var(--a);color:var(--a);}
+.tbadge.b{background:rgba(var(--b-rgb),.12);border:1px solid var(--b);color:var(--b);}
+
+.roles{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 8px;}
+.role{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--edge-bright);border-radius:2px;color:var(--parch-dim);background:rgba(0,0,0,.25);}
+.role b{color:var(--gold-bright);font-weight:600;}
+
+.cmid{display:grid;grid-template-columns:1fr 154px;gap:14px;margin-top:12px;align-items:start;}
+.radar-box{position:relative;height:200px;}
+.sdials{display:flex;flex-direction:column;gap:10px;}
+.sdial{text-align:center;border:1px solid var(--edge);border-radius:7px;padding:10px 6px;background:rgba(0,0,0,.22);}
+.sdial .dlab{font-family:'Cinzel',serif;font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
+.sdial .dval{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:28px;line-height:1.1;}
+.sdial.safe .dval{color:var(--a);}
+.sdial.spd .dval{color:var(--ember);}
+.sdial .dbar{height:5px;border-radius:3px;background:rgba(255,255,255,.07);margin-top:7px;overflow:hidden;}
+.sdial .dfill{height:100%;width:0;border-radius:3px;transition:width 1.1s cubic-bezier(.2,.7,.2,1);}
+.sdial.safe .dfill{background:linear-gradient(90deg,var(--teal-dim),var(--a));}
+.sdial.spd .dfill{background:linear-gradient(90deg,var(--blood),var(--ember));}
+
+.desc{margin-top:10px;font-size:15.5px;color:var(--parch);line-height:1.65;}
+.strength{margin-top:12px;padding:12px 16px;border-radius:6px;font-size:14px;color:var(--parch-dim);background:rgba(66,196,154,.07);border:1px solid var(--teal-dim);}
+.weakness{margin-top:9px;padding:12px 16px;border-radius:6px;font-size:14px;color:var(--parch-dim);background:rgba(142,48,40,.08);border:1px solid #3e2420;}
+.strength b,.weakness b{display:block;font-family:'Cinzel',serif;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;}
+.strength b{color:var(--teal);}
+.weakness b{color:var(--ember);}
+
+.meters{display:flex;gap:14px;margin-top:14px;flex-wrap:wrap;}
+.meter{flex:1;min-width:105px;}
+.mlab{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;margin-bottom:5px;}
+.mlab span{font-family:'JetBrains Mono',monospace;color:var(--parch-dim);}
+.mtrack{height:6px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden;}
+.mfill{height:100%;width:0;border-radius:3px;transition:width 1.1s cubic-bezier(.2,.7,.2,1);}
+.meter.sk .mfill{background:linear-gradient(90deg,#253550,var(--b));}
+.meter.gk .mfill{background:linear-gradient(90deg,var(--gold-dim),var(--gold-bright));}
+
+.chiptray{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;align-items:center;}
+.race-chip{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--parch-dim);background:rgba(0,0,0,.3);border:1px solid var(--edge);border-radius:20px;padding:6px 14px;display:inline-flex;gap:8px;align-items:center;}
+.race-chip b{color:var(--gold);}
+.diff-chip{font-family:'JetBrains Mono',monospace;font-size:10.5px;padding:5px 12px;border-radius:20px;display:inline-flex;gap:6px;align-items:center;border:1px solid;}
+.diff-chip.bg{color:var(--a);border-color:var(--teal-dim);background:rgba(var(--a-rgb),.09);}
+.diff-chip.im{color:var(--gold);border-color:rgba(196,154,60,.5);background:rgba(var(--s-rgb),.08);}
+.diff-chip.ex{color:var(--ember);border-color:rgba(208,104,58,.5);background:rgba(208,104,58,.08);}
+
+/* MAP */
+.map-shell{background:linear-gradient(165deg,var(--panel-2),var(--ink));border:1px solid var(--edge);border-radius:var(--r);padding:22px;box-shadow:var(--shadow);}
+.map-box{position:relative;height:520px;}
+.quad{position:absolute;font-family:'Cinzel',serif;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);pointer-events:none;z-index:3;}
+.quad.tl{top:18px;left:64px;}
+.quad.tr{top:18px;right:24px;color:var(--gold);}
+.quad.bl{bottom:50px;left:64px;}
+.quad.br{bottom:50px;right:24px;color:var(--ember);}
+.map-leg{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--parch-dim);}
+.map-leg span{display:flex;align-items:center;gap:7px;}
+.ldot{width:11px;height:11px;border-radius:50%;display:inline-block;}
+.ldot.s{background:var(--s);box-shadow:0 0 7px var(--s);}
+.ldot.a{background:var(--a);}
+.ldot.b{background:var(--b);}
+
+/* COMPARE */
+.cmp-shell{background:linear-gradient(165deg,var(--panel-2),var(--ink));border:1px solid var(--edge);border-radius:var(--r);padding:28px;box-shadow:var(--shadow);display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;}
+.cmp-canvas{height:420px;}
+.cmp-copy h3{font-family:'Cinzel',serif;color:var(--gold);font-size:20px;margin-bottom:12px;}
+.cmp-copy p{color:var(--parch-dim);font-size:15.5px;margin-bottom:22px;}
+.vlist{list-style:none;}
+.vlist li{padding:11px 0;border-top:1px solid var(--edge);display:flex;gap:12px;font-size:14.5px;color:var(--parch-dim);}
+.vlist li b{font-family:'Cinzel',serif;color:var(--parch);min-width:120px;font-size:13px;flex-shrink:0;}
+
+/* TRAPS */
+.traps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:13px;}
+.trap{background:linear-gradient(180deg,rgba(142,48,40,.1),var(--ink));border:1px solid #3e2420;border-left:3px solid var(--blood);border-radius:5px;padding:18px 20px;}
+.trap h3{font-family:'Cinzel',serif;font-size:14px;color:var(--ember);margin-bottom:8px;}
+.trap p{font-size:14px;color:var(--parch-dim);line-height:1.55;}
+
+/* BETA WATCH */
+.watch-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:13px;}
+.wcard{background:var(--panel);border:1px solid var(--edge);border-radius:5px;padding:18px 20px;}
+.wcard h3{font-family:'Cinzel',serif;font-size:13px;color:var(--teal);margin-bottom:7px;letter-spacing:.05em;}
+.wcard p{font-size:14px;color:var(--parch-dim);line-height:1.55;}
+
+/* RACE */
+.ruleband{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:28px;}
+.rcard{background:linear-gradient(180deg,rgba(66,196,154,.07),var(--ink));border:1px solid var(--teal-dim);border-radius:5px;padding:16px 18px;}
+.rcard h4{font-family:'Cinzel',serif;font-size:13px;color:var(--teal);margin-bottom:6px;letter-spacing:.05em;}
+.rcard p{font-size:14px;color:var(--parch-dim);}
+.race-mat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;}
+.mcard{background:linear-gradient(180deg,var(--panel),var(--ink));border:1px solid var(--edge);border-left:3px solid var(--gold);border-radius:5px;padding:16px 18px;}
+.mcard h4{font-family:'Cinzel',serif;font-size:13.5px;color:var(--gold-bright);margin-bottom:6px;letter-spacing:.03em;}
+.mcard .racial{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--teal);margin-bottom:7px;}
+.mcard p{font-size:13.5px;color:var(--parch-dim);line-height:1.5;}
+
+/* RESOURCES */
+.res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:14px;}
+.res-card{background:var(--panel);border:1px solid var(--edge);border-radius:6px;padding:18px 20px;}
+.res-card h3{font-family:'Cinzel',serif;font-size:14px;color:var(--gold);margin-bottom:14px;letter-spacing:.04em;}
+.res-link{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--edge);color:var(--parch-dim);text-decoration:none;font-size:14px;transition:color .2s;}
+.res-link:last-child{border-bottom:none;}
+.res-link:hover{color:var(--gold-bright);}
+.res-link i{color:var(--teal);width:16px;text-align:center;flex-shrink:0;}
+
+/* FOOTER */
+footer{margin-top:76px;border-top:1px solid var(--edge);padding:36px 0 88px;color:var(--muted);font-size:13.5px;}
+.foot-inner{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:22px;}
+footer a{color:var(--gold);text-decoration:none;}
+footer a:hover{color:var(--gold-bright);text-decoration:underline;}
+.disclaimer{font-style:italic;color:var(--parch-dim);font-size:14px;max-width:920px;line-height:1.65;}
+
+/* PROSE */
+.prose p{font-size:17px;color:var(--parch);max-width:880px;margin-bottom:16px;}
+.prose strong{color:var(--gold-bright);}
+
+/* BACK TOP */
+#back-top{position:fixed;bottom:26px;right:26px;width:46px;height:46px;border-radius:50%;background:var(--panel);border:1px solid var(--edge-bright);color:var(--gold);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;text-decoration:none;z-index:90;opacity:0;transition:opacity .3s,background .2s;}
+#back-top.vis{opacity:1;}
+#back-top:hover{background:rgba(var(--s-rgb),.12);}
+
+/* RESPONSIVE */
+@media(min-width:1000px){.builds{display:grid;grid-template-columns:1fr 1fr;gap:22px;}}
+@media(max-width:900px){.cmp-shell{grid-template-columns:1fr;}.cmp-canvas{height:340px;}.foot-inner{grid-template-columns:1fr;}}
+@media(max-width:640px){body{font-size:1rem;}h1.title{font-size:clamp(38px,12vw,66px);}.cmid{grid-template-columns:1fr;}.radar-box{height:240px;}.nav-links{display:none;}.cd-unit{min-width:62px;padding:10px 14px;}.cd-num{font-size:28px;}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}}
+@media print{nav,#embers,.hero-glow,#back-top,.filter-bar,.cd-label,.cd-box,.map-shell,.cmp-shell{display:none!important;}body{background:#fff;color:#000;font-size:11pt;}h1,h2{color:#222;}a{color:#333;}.bcard,.trap,.wcard{page-break-inside:avoid;border:1px solid #ccc;}}
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+<a href="#main" class="skip">Skip to Content</a>
+
+<!-- NAV -->
+<nav aria-label="Site navigation">
+  <div class="nav-in">
+    <a href="#" class="nav-logo">EQL LEGENDS &mdash; BETA GUIDE</a>
+    <ul class="nav-links" role="list">
+      <li><a href="#limitations">The Lens</a></li>
+      <li><a href="#ladder">Tier List</a></li>
+      <li><a href="#builds">15 Trios</a></li>
+      <li><a href="#map">Battle Map</a></li>
+      <li><a href="#traps">Traps</a></li>
+      <li><a href="#watch">Beta Watch</a></li>
+      <li><a href="#races">Races</a></li>
+      <li><a href="#resources">Links</a></li>
+      <li><a href="#changelog">Updates</a></li>
+    </ul>
+    <div class="nav-badge" id="nav-badge">
+      <span class="nlive"></span>
+      <span id="nav-countdown-text">BETA OPENS JULY 1</span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-glow"></div>
+  <div id="embers"></div>
+  <div class="hero-content wrap">
+    <p class="kicker">Theorycraft Codex &bull; Pre-Order Beta &bull; June 2026</p>
+    <h1 class="title">EverQuest<br>Legends</h1>
+    <p class="hero-sub">Top 15 Three-Class Trios &mdash; The Ultimate Beta Guide</p>
+
+    <div id="countdown-wrap">
+      <p class="cd-label">Beta Server Opens In</p>
+      <div class="cd-box" id="cd-box">
+        <div class="cd-unit"><span class="cd-num" id="cd-d">00</span><span class="cd-lab">Days</span></div>
+        <div class="cd-unit"><span class="cd-num" id="cd-h">00</span><span class="cd-lab">Hours</span></div>
+        <div class="cd-unit"><span class="cd-num" id="cd-m">00</span><span class="cd-lab">Minutes</span></div>
+        <div class="cd-unit"><span class="cd-num" id="cd-s">00</span><span class="cd-lab">Seconds</span></div>
+      </div>
+      <p class="cd-note" id="cd-note">Pre-Order Beta: <strong>July 1&ndash;21</strong> &bull; Full Launch: <strong>July 28, 2026</strong></p>
+    </div>
+
+    <div class="meta-row" style="margin-top:30px;">
+      <span class="pill">Era <b>Pre-Kunark &middot; Lv 50</b></span>
+      <span class="pill"><b>560+</b> Possible Combos &middot; <b>16</b> Classes</span>
+      <span class="pill">Groups <b>4-man max</b> &middot; Raids <b>8-man max</b></span>
+      <span class="pill">Beta Wipe <b>July 21</b> &middot; Launch <b>July 28</b></span>
+    </div>
+
+    <p class="hero-note">Built from the limitations that actually define EQL&rsquo;s beta: no mercs, true-box solo, one active pet per character (all types &mdash; charm included), Cleric-dominant healing meta, Monk-led melee DPS, and D4 bosses that buff-strip and chain-stun. These fifteen trios are ranked by one question: can one body do everything?</p>
+    <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.1em;">SYNTHESIZED FROM CLAUDE OPUS 4.8 &bull; GEMINI 5.1 &bull; GROK 4.3 ANALYSIS &bull; DEV STREAMS &bull; BETA COVERAGE</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap">
+
+<!-- I: LIMITATIONS -->
+<section id="limitations">
+  <div class="sec-head"><span class="sec-num">/ 01</span><h2>The Lens &mdash; Why These Limitations Decide Everything</h2></div>
+  <div class="rule"></div>
+  <p class="lede">EverQuest Legends is not classic EQ and it is not The Heroes&rsquo; Journey. Every ranking on this page flows directly from the rules below &mdash; read them before choosing your trio.</p>
+  <div class="limits" id="limits-grid"></div>
+</section>
+
+<!-- II: TIER LADDER -->
+<section id="ladder">
+  <div class="sec-head"><span class="sec-num">/ 02</span><h2>The Ladder &mdash; All 15 at a Glance</h2></div>
+  <div class="rule"></div>
+  <p class="lede">Ranked by total self-sufficiency under EQL&rsquo;s rules. Tap any trio to jump to its full dossier.</p>
+  <div class="tier-leg">
+    <span class="tleg"><span class="tdot s"></span>S &mdash; Solves everything; scales to D4 with low failure risk</span>
+    <span class="tleg"><span class="tdot a"></span>A &mdash; Excellent with one meaningful trade-off</span>
+    <span class="tleg"><span class="tdot b"></span>B &mdash; Strong and specialized; shines in its lane</span>
+  </div>
+  <div class="ladder" id="ladder-el"></div>
+</section>
+
+<!-- III: 15 BUILDS -->
+<section id="builds">
+  <div class="sec-head"><span class="sec-num">/ 03</span><h2>The Fifteen Dossiers</h2></div>
+  <div class="rule"></div>
+  <p class="lede">Six axes per trio: <strong>Survival</strong>, <strong>DPS</strong>, <strong>Sustain</strong>, <strong>Control</strong>, <strong>Solo</strong>, <strong>Raid D4</strong>. The radar is the build&rsquo;s fingerprint. Rankings use a weighted composite: Solo&nbsp;25%&nbsp;+ DPS&nbsp;25%&nbsp;+ Survival&nbsp;20%&nbsp;+ Sustain&nbsp;15%&nbsp;+ Raid&nbsp;D4&nbsp;10%&nbsp;+ Control&nbsp;5%, cross-referenced against community combo-builder data (patch v3.2, June&nbsp;21&nbsp;2026). S-tier&nbsp;&ge;&nbsp;87 &bull; A-tier&nbsp;80&ndash;86 &bull; B-tier&nbsp;74&ndash;79.</p>
+  <div class="filter-bar" id="filters">
+    <span class="fl">Filter:</span>
+    <span class="fbtn active" data-f="all">All 15</span>
+    <span class="fbtn" data-f="s">S-Tier</span>
+    <span class="fbtn" data-f="a">A-Tier</span>
+    <span class="fbtn" data-f="b">B-Tier</span>
+    <span class="fbtn" data-f="tank">Tank Builds</span>
+    <span class="fbtn" data-f="caster">Caster/Pet</span>
+    <span class="fbtn" data-f="newbie">Beginner</span>
+  </div>
+  <div class="builds" id="builds-el"></div>
+</section>
+
+<!-- IV: BATTLE MAP -->
+<section id="map">
+  <div class="sec-head"><span class="sec-num">/ 04</span><h2>Battle Map &mdash; Kill Speed vs. Survivability</h2></div>
+  <div class="rule"></div>
+  <p class="lede">Every trio plotted by kill speed against survivability. Bubble size is solo self-sufficiency score. The top-right quadrant is where legends are born.</p>
+  <div class="map-shell">
+    <div class="map-box">
+      <span class="quad tl">Fortress &middot; Slow Kills</span>
+      <span class="quad tr">&#9733; Balanced Gods</span>
+      <span class="quad bl">Support &middot; Utility</span>
+      <span class="quad br">Glass Cannons</span>
+      <canvas id="battleMap"></canvas>
+    </div>
+    <div class="map-leg">
+      <span><i class="ldot s"></i>S-Tier</span>
+      <span><i class="ldot a"></i>A-Tier</span>
+      <span><i class="ldot b"></i>B-Tier</span>
+      <span style="color:var(--muted)">bubble size = solo self-sufficiency</span>
+    </div>
+  </div>
+</section>
+
+<!-- V: S-TIER COMPARE -->
+<section id="compare">
+  <div class="sec-head"><span class="sec-num">/ 05</span><h2>S-Tier Overlaid &mdash; Four Roads to Immortality</h2></div>
+  <div class="rule"></div>
+  <div class="cmp-shell">
+    <div class="cmp-canvas"><canvas id="compareRadar"></canvas></div>
+    <div class="cmp-copy">
+      <h3>One problem, four shapes</h3>
+      <p>Every S-tier build answers EQL&rsquo;s core challenge &mdash; one body doing everything &mdash; with a different set of tools. Where one bends, another holds.</p>
+      <ul class="vlist">
+        <li><b>#1 The Saint</b><span>Peak survival + raid scaling. Safe, relatively simple, and still kills fast. The clear first-pick.</span></li>
+        <li><b>#2 Tank-in-a-Box</b><span>Mode-switch build: strip-proof pet tank OR highest charm-DPS ceiling. Confirmed: charm and pet cannot coexist. Demands the most APM.</span></li>
+        <li><b>#3 Dark Triumvirate</b><span>Classic king with pack-farming dominance. Lifetap nerf softened it, AoE aggro saved it.</span></li>
+        <li><b>#4 The Controller</b><span>Lowest death risk in the game. Slowest clears. The "never die, farm safely" choice.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- VI: TRAPS -->
+<section id="traps">
+  <div class="sec-head"><span class="sec-num">/ 06</span><h2>Traps &mdash; Builds That Look Great and Fall Apart</h2></div>
+  <div class="rule"></div>
+  <p class="lede">Combos that dominated THJ or classic EQ spreadsheets and quietly collapse under EQL&rsquo;s specific rules. Don&rsquo;t commit before reading this.</p>
+  <div class="traps-grid" id="traps-grid"></div>
+</section>
+
+<!-- VII: BETA WATCH -->
+<section id="watch">
+  <div class="sec-head"><span class="sec-num">/ 07</span><h2>Beta Watch &mdash; What Could Move This List</h2></div>
+  <div class="rule"></div>
+  <p class="lede">Nothing is locked until July 28 launch. These are the levers most likely to reshuffle the order during beta.</p>
+  <div class="watch-grid" id="watch-grid"></div>
+</section>
+
+<!-- VIII: RACES -->
+<section id="races">
+  <div class="sec-head"><span class="sec-num">/ 08</span><h2>Pick Your Blood &mdash; Race Selection Guide</h2></div>
+  <div class="rule"></div>
+  <p class="lede">EQL only race-locks your <strong>primary</strong> class &mdash; the other two are free picks you can swap in any city. The question isn&rsquo;t "what race is my build," it&rsquo;s "which class do I lock to capture the best racial?"</p>
+  <div class="ruleband">
+    <div class="rcard"><h4>Only Your Primary Is Locked</h4><p>Your race gates one class &mdash; the primary. Classes two and three are free and swappable in any city at any time. Spend the race lock on whichever class benefits most from your bloodline&rsquo;s racial abilities.</p></div>
+    <div class="rcard"><h4>Two Racials Rule the Meta</h4><p><strong style="color:var(--gold-bright)">Iksar</strong> &mdash; HP regen + AC scaling (+15&rarr;+35) for any melee or pet body. <strong style="color:var(--gold-bright)">Ogre</strong> &mdash; frontal stun immunity for tanks facing D4 chain-stun. Everything else is a minor tax break.</p></div>
+    <div class="rcard"><h4>Race Is an Opener, Not a Cage</h4><p>No Ogre? The <strong>Steadfast Will</strong> AA grants full stun immunity to any race. Froglok now broadly playable (Monk, SK, Shaman, Paladin). Gear is mostly race-unlocked.</p></div>
+  </div>
+  <div class="race-mat" id="race-mat"></div>
+</section>
+
+<!-- IX: RESOURCES -->
+<section id="resources">
+  <div class="sec-head"><span class="sec-num">/ 09</span><h2>Resources &amp; Live Links</h2></div>
+  <div class="rule"></div>
+  <p class="lede">Community hubs, official channels, and content creators covering EverQuest Legends. These links lead off-site &mdash; always verify patch notes before committing AAs in beta.</p>
+  <div class="res-grid">
+    <div class="res-card">
+      <h3><i class="fa-solid fa-dragon" style="color:var(--teal);margin-right:8px;"></i>Official</h3>
+      <a href="https://www.everquest.com" class="res-link" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i>EverQuest Official Site</a>
+      <a href="https://www.daybreakgames.com" class="res-link" target="_blank" rel="noopener"><i class="fa-solid fa-building"></i>Daybreak Games</a>
+      <a href="https://www.everquest.com/news" class="res-link" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i>EQ Official News &amp; Patch Notes</a>
+    </div>
+    <div class="res-card">
+      <h3><i class="fa-brands fa-reddit-alien" style="color:var(--teal);margin-right:8px;"></i>Community</h3>
+      <a href="https://www.reddit.com/r/everquest/" class="res-link" target="_blank" rel="noopener"><i class="fa-brands fa-reddit"></i>r/EverQuest &mdash; Main Subreddit</a>
+      <a href="https://www.reddit.com/r/EverQuestLegends/" class="res-link" target="_blank" rel="noopener"><i class="fa-brands fa-reddit"></i>r/EverQuestLegends &mdash; Beta Hub</a>
+      <a href="https://discord.gg/everquest" class="res-link" target="_blank" rel="noopener"><i class="fa-brands fa-discord"></i>EQ Discord Community</a>
+    </div>
+    <div class="res-card">
+      <h3><i class="fa-brands fa-youtube" style="color:var(--teal);margin-right:8px;"></i>Content Creators</h3>
+      <a href="https://www.youtube.com/@PhlingerPhoo" class="res-link" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i>Phlinger Phoo &mdash; EQ Veteran</a>
+      <a href="https://www.youtube.com/results?search_query=everquest+legends+beta" class="res-link" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i>EQL Beta Coverage (YouTube)</a>
+      <a href="https://www.twitch.tv/directory/game/EverQuest" class="res-link" target="_blank" rel="noopener"><i class="fa-brands fa-twitch"></i>EverQuest on Twitch</a>
+    </div>
+    <div class="res-card">
+      <h3><i class="fa-solid fa-scroll" style="color:var(--teal);margin-right:8px;"></i>Guides &amp; Tools</h3>
+      <a href="https://everquestguides.com/legends" class="res-link" target="_blank" rel="noopener"><i class="fa-solid fa-table-list"></i>EQL Class Combo Builder</a>
+      <a href="https://www.theheroesjourney.net" class="res-link" target="_blank" rel="noopener"><i class="fa-solid fa-map"></i>The Heroes&rsquo; Journey (EQ Emu Data)</a>
+      <a href="https://massivelyop.com/category/everquest/" class="res-link" target="_blank" rel="noopener"><i class="fa-solid fa-rss"></i>Massively OP &mdash; EQ News</a>
+      <a href="https://www.mmorpg.com/everquest" class="res-link" target="_blank" rel="noopener"><i class="fa-solid fa-rss"></i>MMORPG.com &mdash; EQ Coverage</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROSE: WHY THE SAME CLASSES -->
+<section id="meta-analysis" class="prose">
+  <div class="sec-head"><span class="sec-num">/ 10</span><h2>Why the Same Five Classes Dominate</h2></div>
+  <div class="rule"></div>
+  <p>If it feels like <strong>Cleric, Shaman, Enchanter, Monk,</strong> and a pet class appear in almost everything &mdash; that&rsquo;s not lazy theorycrafting. It&rsquo;s the meta the limitations create. With no mercs and no boxing, every trio privately solves the holy trinity, and four classes each own one corner outright: <strong>Cleric</strong> owns healing (Promise Renewal), <strong>Shaman</strong> owns mitigation-through-slow, <strong>Enchanter</strong> owns crowd control and the highest DPS ceiling (charm), and <strong>Monk</strong> owns melee damage with a built-in escape (Feign Death). A pet class offers a fifth path &mdash; a body that tanks and ignores buff-strip.</p>
+  <p>The art of building a trio is choosing <em>which</em> engines to double down on. Want fastest clears? Monk + charm. Want to never die? Cleric + Shaman + mez. Want a true tank? Warrior or Paladin up front. The recurring names are the load-bearing walls; the third slot is where your playstyle lives. <strong>Shadow Knight</strong> sits at the intersection of tank, lifetap sustain, and AoE aggro &mdash; a perennial top pick that the lifetap nerf softened but couldn&rsquo;t dethrone. <strong>Necromancer</strong> makes a strong case as the "upgrade" over pure melee: DoT pressure, an emergency pet tank, and the single most reliable panic ability in Feign Death.</p>
+</section>
+
+<!-- XI: GUIDE CHANGELOG -->
+<section id="changelog">
+  <div class="sec-head"><span class="sec-num">/ 11</span><h2>Guide Update Log</h2></div>
+  <div class="rule"></div>
+  <p class="lede">All changes below were applied June 24, 2026. v1.1 synced with closed-beta patch notes (Apr 24&ndash;Jun 21, 2026) and confirmed mechanics. v1.2 restructured all 15 rankings using a weighted scoring methodology and community combo-builder data, adding 3 new builds (SK/Shaman/Enc #4, Warrior/Cleric/Enc #6, Paladin/Bard/Rogue #9) and dropping 3 (Cleric/Monk/Nec, Mag/Shaman/Enc, Warrior/Bard/Cleric). Prior version was v1.0 (published June 22, 2026).</p>
+
+  <!-- VERSION HEADER -->
+  <div style="display:flex;align-items:center;gap:16px;padding:14px 20px;background:linear-gradient(90deg,rgba(66,196,154,.07),transparent);border:1px solid var(--teal-dim);border-radius:6px;margin-bottom:22px;">
+    <span style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:var(--teal);letter-spacing:.08em;white-space:nowrap;">v1.1</span>
+    <span style="width:1px;height:28px;background:var(--edge-bright);flex-shrink:0;"></span>
+    <span style="font-family:'Cinzel',serif;font-size:13px;color:var(--gold-bright);letter-spacing:.04em;">June 24, 2026 &mdash; Fact-Check &amp; Closed-Beta Sync</span>
+    <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);margin-left:auto;">sources: eqlwiki &bull; combo builder patch notes &bull; dev discord</span>
+  </div>
+
+  <!-- CORRECTED ENTRIES -->
+  <p style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--ember);margin-bottom:10px;">&#9652; Corrected &mdash; Prior Version Was Factually Wrong</p>
+  <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:26px;">
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:0;background:linear-gradient(180deg,rgba(208,104,58,.08),var(--ink));border:1px solid rgba(208,104,58,.3);border-left:3px solid var(--ember);border-radius:5px;padding:14px 18px;align-items:start;gap:14px;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ember);padding-top:3px;">CORRECTED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Charm + Summoned Pet Cannot Coexist</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">Prior version listed this as an open &ldquo;Beta Watch&rdquo; question. <strong style="color:var(--parch);">Confirmed via official dev statement (Discord, Mar 2026) and Unofficial FAQ:</strong> charm counts against the one-active-pet cap. You cannot run a summoned pet and a charmed mob simultaneously &mdash; you must choose one. Affected: Build #2 description &amp; pro/con, Build #12 description &amp; pro, the &ldquo;One Pet&rdquo; Limitations card, the &ldquo;Charm Is Conditional&rdquo; card, the hero note, and the S-Tier compare sidebar for #2.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(208,104,58,.08),var(--ink));border:1px solid rgba(208,104,58,.3);border-left:3px solid var(--ember);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ember);padding-top:3px;">CORRECTED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">SK Soul Abrasion AA Was Not Gutted</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">Prior version stated &ldquo;SK&rsquo;s Soul Abrasion AA gutted&rdquo; in the Limitations card. <strong style="color:var(--parch);">Confirmed via beta patch notes:</strong> Soul Abrasion is +200% lifetap proc damage &mdash; the AA was not nerfed. The nerf hit <em>base</em> lifetap damage/heal scaling only. Affected: &ldquo;Life Taps Got Nerfed&rdquo; Limitations card (retitled &ldquo;Base Only&rdquo;), Build #3 description, Build #9 con.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(208,104,58,.08),var(--ink));border:1px solid rgba(208,104,58,.3);border-left:3px solid var(--ember);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ember);padding-top:3px;">CORRECTED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Magician Earth Pet Is Warrior/Ranger</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">Prior version called the Mag pet &ldquo;Ranger-class.&rdquo; <strong style="color:var(--parch);">Confirmed via EQL Wiki patch notes (June 2, 2026):</strong> all summoned pets gain Warrior as a base class plus a secondary. Magician Earth pets are <strong style="color:var(--parch);">Warrior/Ranger</strong>. Enchanter animations are Warrior/Paladin. Beastlord Warders are Warrior/Berserker. Affected: Build #2 description.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(208,104,58,.08),var(--ink));border:1px solid rgba(208,104,58,.3);border-left:3px solid var(--ember);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ember);padding-top:3px;">CORRECTED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Druid&rsquo;s New Lines Are Damage-Role, Not a Heal Line</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">Prior version assumed one of Druid&rsquo;s two new spell lines was a heal line. <strong style="color:var(--parch);">Confirmed via Combo Builder patch notes:</strong> both new lines are &ldquo;exclusive to damage roles.&rdquo; Druid&rsquo;s healing profile is unchanged; the upgrade is to its DPS ceiling. Affected: Beta Watch &ldquo;The Hidden Druid Line&rdquo; card (retitled &ldquo;Druid DPS Lines Landed&rdquo;).</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(208,104,58,.08),var(--ink));border:1px solid rgba(208,104,58,.3);border-left:3px solid var(--ember);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ember);padding-top:3px;">CORRECTED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Berserker Stance Provides Double Attack Speed, Not &ldquo;No Bonus&rdquo;</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">Prior version&rsquo;s Traps entry stated &ldquo;Berserker Stance provides no hit bonus.&rdquo; <strong style="color:var(--parch);">Confirmed:</strong> Berserker Stance grants double attack speed (a significant DPS modifier, not an accuracy bonus). The core message &mdash; that Monk still out-hits Berserker &mdash; remains valid. Affected: Traps card for &ldquo;Two-Handed Berserker Without a Real Tank.&rdquo;</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CONFIRMED ENTRIES -->
+  <p style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--teal);margin-bottom:10px;">&#10003; Confirmed &mdash; Previously Uncertain, Now Verified</p>
+  <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:26px;">
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(66,196,154,.07),var(--ink));border:1px solid var(--teal-dark);border-left:3px solid var(--teal-dim);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);padding-top:3px;">CONFIRMED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Berserker Closed-Beta Buffs</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;"><strong style="color:var(--parch);">Source: Combo Builder patch notes v3.x (Jun 2026).</strong> Block mechanic added. DPS rating 88&rarr;93. Mitigation 35&rarr;43. Two stances confirmed: Striker (5&times; skill damage) and Berserker (double attack speed, glass-cannon optional). Blood Rune AA no longer triggers on normal spell crits. Build #15 con updated to note these improvements. Berserker is materially stronger than the original B-tier writeup assumed.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(66,196,154,.07),var(--ink));border:1px solid var(--teal-dark);border-left:3px solid var(--teal-dim);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);padding-top:3px;">CONFIRMED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Channeler Stance: Flat 40% Damage Cut, Not a Bug</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;"><strong style="color:var(--parch);">Source: EQL Wiki patch notes + Combo Builder v3.1 (Jun 17, 2026).</strong> Channeler Stance confirmed at flat 40% incoming damage reduction for casters (Wizard, Enchanter, Cleric, Druid, Shaman). Caster durability scores were officially raised to reflect it. Prior version flagged this as &ldquo;probably an incoming fix.&rdquo; It is a documented mechanic; whether it survives the July 28 launch pass unchanged is still watch-list territory. Beta Watch card updated.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(66,196,154,.07),var(--ink));border:1px solid var(--teal-dark);border-left:3px solid var(--teal-dim);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);padding-top:3px;">CONFIRMED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Cleric Promise Renewal Survived Closed Beta Unchanged</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;"><strong style="color:var(--parch);">Source: EQL Wiki + Combo Builder patch notes through Jun 21, 2026.</strong> No tune-down to Promise Renewal found in any closed-beta patch note. The &ldquo;always bring a Cleric&rdquo; assumption remains intact entering the July 1 pre-order beta. Beta Watch card updated to reflect survival status.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(66,196,154,.07),var(--ink));border:1px solid var(--teal-dark);border-left:3px solid var(--teal-dim);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);padding-top:3px;">CONFIRMED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Enchanter Slow Was the Single Biggest Scoring Error</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;"><strong style="color:var(--parch);">Source: Combo Builder v2.2 notes.</strong> Pre-beta scoring omitted Enchanter slow entirely &mdash; described as &ldquo;the biggest single calibration error.&rdquo; Enchanter slow is now properly credited alongside Shaman slow in builds that include both. Any build featuring Enchanter is stronger than pre-beta estimates suggested. This reinforces Enchanter&rsquo;s position in builds #2, #4, #5, #12.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- UPDATED ENTRIES -->
+  <p style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">&#8635; Updated &mdash; Outdated Information Refreshed</p>
+  <div style="display:flex;flex-direction:column;gap:9px;">
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(196,154,60,.07),var(--ink));border:1px solid var(--gold-dim);border-left:3px solid var(--gold);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);padding-top:3px;">UPDATED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Closed Beta Opened April 24, 2026</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">Prior version implied July 1 was the first beta access. Closed beta opened April 24, 2026 (NDA active at first). July 1 is the pre-order (open) beta; July 21 wipe; July 28 full launch. All &ldquo;going into beta&rdquo; language in this guide refers to the July 1 pre-order phase. Disclaimer and footer updated.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(196,154,60,.07),var(--ink));border:1px solid var(--gold-dim);border-left:3px solid var(--gold);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);padding-top:3px;">UPDATED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Major Class Confirmations from June 2026 Patch Notes</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">Beta Watch &ldquo;Major Class Reworks&rdquo; card replaced with a live data snapshot. Key confirmations: <strong style="color:var(--parch);">Rogue</strong> DPS 65&rarr;82, Chaotic Stab autogranted at level 1 (no positional requirement), new poison system, Escape ability (aggro drop + invis, 2% endurance cost). <strong style="color:var(--parch);">Ranger</strong> gained Block, parry, fastcast nukes, triple attack. <strong style="color:var(--parch);">Warrior</strong> Heroic Leap (AoE taunt, 8 targets, 1250 hatred, 30s CD) and Cleave (3 additional targets on double/triple attacks) both confirmed. <strong style="color:var(--parch);">Enchanter</strong> slow now properly scored.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(196,154,60,.07),var(--ink));border:1px solid var(--gold-dim);border-left:3px solid var(--gold);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);padding-top:3px;">UPDATED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Build #2 Reframed as Mode-Switch Build</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">Magician/Cleric/Enchanter (#2) was implicitly framed as having simultaneous pet-tank + charm-DPS. With charm confirmed to count against the pet cap, the correct framing is a <strong style="color:var(--parch);">mode-switch build</strong>: pet-tank mode (Warrior/Ranger Earth pet, strip-proof) vs. charm-DPS mode (dismiss pet, charm for peak DPS). Still S-tier #2 &mdash; the flexibility is the strength, not simultaneity. Rankings unchanged.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(196,154,60,.07),var(--ink));border:1px solid var(--gold-dim);border-left:3px solid var(--gold);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);padding-top:3px;">UPDATED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Build #12 &ldquo;Two Bodies&rdquo; Claim Removed</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">Magician/Shaman/Enchanter (#12) previously listed &ldquo;Pet + charm gives you two damage bodies under the one-pet interpretation&rdquo; as a pro. This was the open-question interpretation, and the answer is no. Build #12 description and pro updated to reflect mode-switching rather than simultaneous use. No ranking change.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- v1.2 SEPARATOR -->
+  <div style="height:1px;background:var(--edge-bright);margin:32px 0 24px;opacity:.35;"></div>
+
+  <!-- v1.2 VERSION HEADER -->
+  <div style="display:flex;align-items:center;gap:16px;padding:14px 20px;background:linear-gradient(90deg,rgba(196,154,60,.07),transparent);border:1px solid var(--gold-dim);border-radius:6px;margin-bottom:22px;">
+    <span style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:var(--gold-bright);letter-spacing:.08em;white-space:nowrap;">v1.2</span>
+    <span style="width:1px;height:28px;background:var(--edge-bright);flex-shrink:0;"></span>
+    <span style="font-family:'Cinzel',serif;font-size:13px;color:var(--gold-bright);letter-spacing:.04em;">June 24, 2026 &mdash; Ranking Restructure &amp; New Build Entries</span>
+    <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);margin-left:auto;">methodology: Solo 25% + DPS 25% + Survival 20% + Sustain 15% + Raid D4 10% + Control 5%</span>
+  </div>
+
+  <!-- v1.2 RANKING CHANGES -->
+  <p style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">&#8635; Ranking Restructure &mdash; Community-Data Cross-Referenced</p>
+  <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:26px;">
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(196,154,60,.07),var(--ink));border:1px solid var(--gold-dim);border-left:3px solid var(--gold);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);padding-top:3px;">RERANKED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">SK/Monk/Shaman Promoted to #1 (was #3)</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">EQL community combo builder and closed-beta community data rate SK/Monk/Shaman the best all-rounder across all 560 trios. AoE pack farming via Scream of Death proc, healer-less D4 viability via Soul Abrasion + Shaman slow, and double Feign Death combine into a ceiling no other build reaches. Cleric/Shaman/Monk moves to #2 &mdash; still the gold standard for D4 safety specifically.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(196,154,60,.07),var(--ink));border:1px solid var(--gold-dim);border-left:3px solid var(--gold);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);padding-top:3px;">RERANKED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Magician/Cleric/Enchanter Moves to #3 (was #2), Cleric/Shaman/Enchanter Drops to #5 A-Tier (was #4 S)</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">Magician/Cleric/Enchanter remains S-tier but moves to #3 behind SK/Monk/Shaman on raw versatility. Cleric/Shaman/Enchanter drops to A-tier #5 &mdash; its DPS floor (charm-only) makes it the slowest-clearing S-tier; exceptional safety, but the ranking methodology penalizes a 68 DPS score against the A-tier ceiling.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(196,154,60,.07),var(--ink));border:1px solid var(--gold-dim);border-left:3px solid var(--gold);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);padding-top:3px;">RERANKED</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Cleric/Monk/Nec, Mag/Shaman/Enc, &amp; Warrior/Bard/Cleric Dropped from Top 15</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">Three builds removed to make room for higher-rated entries confirmed by community data. Cleric/Monk/Nec (#11) trades Shaman slow for a rez &mdash; excellent small-group tool but worse solo scoring than the replaced A-tier builds. Mag/Shaman/Enc (#12) is outcompeted by both Mag/Cleric/Enc (#3) and SK/Shaman/Enc (#4). Warrior/Bard/Cleric (#14) is excellent at raid D4 but its solo and DPS floor rank it below the three incoming entries.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- v1.2 NEW BUILDS -->
+  <p style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--teal);margin-bottom:10px;">&#43; New Builds Added</p>
+  <div style="display:flex;flex-direction:column;gap:9px;">
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(66,196,154,.07),var(--ink));border:1px solid var(--teal-dark);border-left:3px solid var(--teal-dim);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);padding-top:3px;">NEW #4</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">SK / Shaman / Enchanter &ldquo;The Charm Reaver&rdquo; &mdash; S-Tier</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">Community-confirmed S-tier omission from v1.0/v1.1. SK provides the self-sustaining tank body (Soul Abrasion + Shaman slow) while Enchanter provides the highest single-target DPS in the game (unbreakable-charm AA), plus full debuff redundancy (dual slow), mez, runes, and Clarity. The highest burst DPS ceiling of all S-tiers when charm lands alongside the Soul Abrasion proc.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(66,196,154,.07),var(--ink));border:1px solid var(--teal-dark);border-left:3px solid var(--teal-dim);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);padding-top:3px;">NEW #6</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Warrior / Cleric / Enchanter &ldquo;The Ironclad Charmer&rdquo; &mdash; A-Tier</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">The only build where the tank side carries zero strippable mana &mdash; buff-strip at D4 does literally nothing to the Warrior. Highest D4 raid score in the A-tier. Ogre Warrior stun immunity + Enchanter runes create dual chain-stun counters. Warrior Heroic Leap (AoE taunt, 8 targets) solves the pack problem Enchanter builds otherwise struggle with.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:100px 1fr;gap:14px;background:linear-gradient(180deg,rgba(66,196,154,.07),var(--ink));border:1px solid var(--teal-dark);border-left:3px solid var(--teal-dim);border-radius:5px;padding:14px 18px;align-items:start;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);padding-top:3px;">NEW #9</span>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:14px;color:var(--parch);margin-bottom:5px;">Paladin / Bard / Rogue &ldquo;The Stun Cascade&rdquo; &mdash; A-Tier</div>
+        <div style="font-size:14px;color:var(--parch-dim);line-height:1.55;">Best stun output in the game — directly counter D4 chain-stun casters by stunning them first (Bard Overhaste multiplies stun proc rate). Rogue beta rework (Chaotic Stab autogranted at level 1, new poison system, Escape ability) finally makes Rogue a top-tier DPS body without positional cheese. Rogue Escape + Paladin Lay on Hands = two independent survival buttons.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</div><!-- /wrap -->
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-inner">
+      <div>
+        <p style="font-family:'Cinzel',serif;color:var(--gold);font-size:15px;letter-spacing:.04em;margin-bottom:14px;">Sources &amp; Context (Apr&ndash;Jun 2026)</p>
+        <p>Official <a href="https://www.everquest.com" target="_blank">EverQuest Legends</a> site &amp; FAQ &bull; Daybreak / Game Jawn dev streams &amp; Insights episodes I&ndash;IV &bull; Closed Beta patch notes (Apr 24&ndash;Jun 21, 2026) via <a href="https://eqlwiki.com/Patch_notes" target="_blank">EQL Wiki Patch Notes</a> &bull; <a href="https://everquestguides.com/legends/patch-notes.html" target="_blank">EQL Class Combo Builder Patch Notes</a> (Thomas Van, v2.1&ndash;v3.2) &bull; <a href="https://www.everquestguides.com/everquest-articles/eq-legends-faq-unofficial/" target="_blank">EQL Unofficial FAQ</a> &bull; <a href="https://pixelnomad.ca/2026/03/28/eql-questions-answered/" target="_blank">Pixel Nomad: EQL Questions Answered</a> (one-pet-per-player official dev statement) &bull; <a href="https://massivelyop.com/2026/05/28/everquest-legends-latest-video-talks-new-features-multiclassing-challenge-and-expansions/" target="_blank">Massively OP May 2026 preview</a> &bull; <a href="https://www.mmorpg.com/previews/everquest-legends-beta-preview-2000138071" target="_blank">MMORPG.com Beta Preview</a> &bull; Beta creator coverage: Phlinger Phoo, Higher Thought Gaming, Slayheim, Classic EverQuest, Grimthole, Hammackj, Razman&rsquo;s Retro Realm &bull; Analysis synthesized from Claude Opus 4.8, Gemini 5.1, and Grok 4.3 independent theorycraft. <strong>Pet/charm ruling</strong> cross-referenced against EQL Wiki Pet Guide, Combo Builder scoring notes, and community-confirmed dev statement (Mar 2026 Discord).</p>
+      </div>
+      <div>
+        <p style="font-family:'Cinzel',serif;color:var(--gold);font-size:15px;letter-spacing:.04em;margin-bottom:14px;">Guide Information</p>
+        <p>Published June 22, 2026 &bull; Beta version (pre-launch) &bull; <a href="https://www.everquest.com" target="_blank">EverQuest Legends</a> is developed by Daybreak Game Company and Game Jawn &bull; All 16 classes, 560+ combos at Pre-Kunark cap (Lv 50) &bull; Will be updated with live beta data post-July 1</p>
+      </div>
+    </div>
+    <p class="disclaimer">EverQuest Legends closed beta opened April 24, 2026; pre-order beta opens July 1, wipes July 21, full launch July 28, 2026. Pet/charm mechanics in this guide reflect confirmed closed-beta findings (through June 21, 2026 patch notes). Class reworks and balance numbers are actively changing &mdash; this is independent fan theorycraft, not official guidance. Stat ratings are expressed on a 0&ndash;100 scale to make trade-offs legible; they are not official figures. Re-verify all ability names, AA costs, and balance mechanics against current patch notes before committing AAs in beta. Forge your legend accordingly.</p>
+  </div>
+</footer>
+
+<a href="#" id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+/* ===========================
+   DATA
+   =========================== */
+const LIMITS = [
+  {title:'No Mercs · True-Box', body:'One client per PC, no hired healers, no boxing. Your three classes are your entire group. Self-sufficiency isn\'t a bonus — it\'s the whole game.'},
+  {title:'One Active Pet — All Types', body:'The famous THJ triple-pet stack is dead. You get one active pet at a time — and this cap covers <strong>all</strong> pet types, including charmed mobs. Dismiss your summoned pet before charming, or charm a mob to replace it. Multi-class pet characters stack extra gear slots on whichever single pet is active. One elite, well-geared pet outperforms the old triple-stack.'},
+  {title:'Cleric Is King', body:'Promise Renewal is the strongest single healing ability in beta. The game\'s dominant healer appears in a majority of top builds for a reason.'},
+  {title:'Monk Tops Melee', body:'Monk out-hits Berserker on high-level bosses; dual-wield beats two-handers by ~150 DPS. When you want a melee body, it\'s almost always the Monk.'},
+  {title:'Charm Is Conditional — And Exclusive', body:'Enchanter charm is the highest DPS in the game — once you have the unbreakable-charm AA. Without it, charm is unreliable on named. Critically: charm counts against the one-active-pet cap. Running a summoned pet and a charmed mob at the same time is not possible — you must choose one or the other. Plan for the AA, then plan for the mode-switch.'},
+  {title:'Life Taps Got Nerfed (Base Only)', body:'Base lifetap damage/heal scaling removed — the old "tap myself to full" fortress is softer and now leans on a real healer. Correction from earlier drafts: the Soul Abrasion AA was <em>not</em> gutted; it is confirmed at +200% lifetap proc damage. The nerf hit base scaling, not the AA multiplier.'},
+  {title:'Stances & Invocations', body:'Melee stances and caster invocations let secondary abilities fire without breaking your main flow. Blended builds work here in ways they couldn\'t in classic EQ.'},
+  {title:'D1 → D5 Difficulty Scaling', body:'D4 raid bosses solo-killable but punishing: buff-strip and chain-stun spike hard from D3→D4. Builds need sustained damage and redundant survival that strip can\'t undo.'},
+  {title:'Commitment Has Teeth', body:'Third class unlocks at level 10; swapping an unleveled class drops you to its level and disables AAs. Level all three. Your trio is a commitment, not a per-fight toggle.'},
+];
+
+const AXES = ['Survival','DPS','Sustain','Control','Solo','Raid D4'];
+const TC = {s:'240,204,114', a:'93,219,176', b:'122,184,220'};
+
+/* ===========================
+   RANKING METHODOLOGY
+   Solo 25% + DPS 25% + Survival 20% + Sustain 15% + Raid D4 10% + Control 5%
+   S-tier ≥ 87 · A-tier 80–86 · B-tier 74–79
+   Community cross-reference: EQL Class Combo Builder (everquestguides.com/legends)
+   Closed-beta data through patch v3.2, June 21 2026
+   =========================== */
+const BUILDS = [
+  {rank:1,tier:'s',tags:['tank'],
+   trio:'Shadow Knight / Monk / Shaman',nick:'The Dark Triumvirate',diff:'im',
+   roles:[['Shadow Knight','tank + snap-aggro + Scream of Death AoE lifetap · Soul Abrasion +200%'],['Monk','top melee DPS + FD'],['Shaman','slow + heal + haste + ATK buffs']],
+   stats:{Survival:90,DPS:90,Sustain:86,Control:65,Solo:94,'Raid D4':88},
+   skill:65,gear:65,
+   race:'Iksar SK — regen + scaling AC on the tank body; Iksar Monk works equally as primary lock',
+   desc:'The community\'s confirmed #1 across all EQL closed-beta data — the best all-rounder in the game. SK is a self-sustaining tank: snap-aggro on every pull, Scream of Death AoE lifetap proc (redesigned from single-target, confirmed) for efficient pack farming, and Soul Abrasion AA at +200% lifetap proc damage providing passive HP return while tanking. Shaman slow (~50% incoming damage reduction) covers most of the dedicated-healer gap without burning a class slot on a Cleric. Monk is the top melee DPS body and carries Feign Death as an independent panic reset. The result: a build that farms fast, pulls efficient packs, and survives D4 without needing a dedicated healer — the rarest combination in EQL. Community combo builder rates this #1 out of all 560 possible trios.',
+   pro:'Best AoE pack-farming of any build (Scream of Death proc). SK self-sustain + Shaman slow allows healer-less D4 survival. Both SK and Monk carry independent Feign Death panic buttons — double escape anywhere in a dungeon. Fastest D1–D3 farm speed of any S-tier.',
+   con:'Base lifetap scaling nerfed — the build relies more on Shaman slow to cover HP than the old fortress. No mez or charm; CC is FD-based. Slightly lower D4 safety ceiling than Cleric-anchored builds in absolute worst-case extended encounters. Similar builds (SK/Rogue/Shaman) compete for the same slot — Monk remains preferred for FD + DPS consistency.'
+  },
+  {rank:2,tier:'s',tags:['caster'],
+   trio:'Cleric / Shaman / Monk',nick:'The Self-Sufficient Saint',diff:'im',
+   roles:[['Cleric','best heal · Promise Renewal'],['Shaman','slow + buffs + HoT'],['Monk','top melee DPS + FD']],
+   stats:{Survival:95,DPS:78,Sustain:92,Control:55,Solo:96,'Raid D4':95},
+   skill:55,gear:55,
+   race:'Iksar Monk — regen + scaling AC on your front-line melee body',
+   desc:'The safest D4 build in the game — ranked #2 overall and #1 specifically for players who want the lowest possible death rate through progression. Promise Renewal (Cleric) is the strongest single heal in beta, surviving on its own without gear dependency. Shaman slow cuts incoming melee by ~50%, meaning the dominant heal almost never gets tested. Monk leads the melee charts and has Feign Death as a built-in panic reset. Two independent healing layers (Promise Renewal burst + Shaman HoT/slow) mean boss buff-strip can never simultaneously disable both — a unique D4 edge. Farms slightly slower than #1 SK/Monk/Shaman due to no AoE aggro or self-healing tank, but is the gold standard for D4 progression safety.',
+   pro:'Two independent healing layers that buff-strip cannot simultaneously disable. Monk FD resets any catastrophic pull. Highest D4 Raid score and highest Solo score in the guide. Scales cleanly from D1 farming to D4 raiding. Lowest gear dependency of the S-tier.',
+   con:'Single-target only — no pet, no charm, no AoE aggro or pack tools. Farms slower than SK builds at D1–D3. Trash packs require deliberate sequential pulling. Adds are FD problems, not mez problems.'
+  },
+  {rank:3,tier:'s',tags:['caster','pet'],
+   trio:'Magician / Cleric / Enchanter',nick:'Tank-in-a-Box',diff:'ex',
+   roles:[['Magician','pet tank + damage shield'],['Cleric','best heal'],['Enchanter','charm + mez + Clarity + runes']],
+   stats:{Survival:90,DPS:80,Sustain:88,Control:92,Solo:88,'Raid D4':94},
+   skill:90,gear:78,
+   race:'Erudite Magician — deepest mana pool to fuel the pet and sustained heals',
+   desc:'The purest no-tank build. Your Mag Earth pet is Warrior/Ranger class (all pets gain Warrior as a base class plus a secondary), double-HP, and fully gearable — it holds aggro while Cleric keeps everything topped and Enchanter layers on mez (add control), Clarity (mana), haste (pet speed), and runes (stun shield). <strong>Confirmed:</strong> charm counts against the one-pet limit, so you cannot run summoned pet and charmed mob simultaneously. This is a mode-switch build: pet-tank for reliable, strip-proof aggro on D4 boss phases, or dismiss the pet and drop charm for the highest DPS ceiling in the game on trash phases. Each mode is excellent; the skill is knowing when to swap.',
+   pro:'Pet damage is strip-proof at D4 during pet-tank mode — a unique edge no melee build shares. Best control ceiling of any S-tier. Enchanter runes directly counter chain-stun. Confirmed unbreakable-charm AA makes the DPS mode the strongest single-target damage available. Mode-switch flexibility is unmatched.',
+   con:'Highest APM of the S-tier: managing pet-vs-charm mode switches, mez, rune timing, and pet positioning all simultaneously. <strong>Confirmed:</strong> charm and summoned pet cannot coexist — you cannot have peak DPS and a dedicated pet tank at the same time. Transitioning between modes mid-fight is a real skill check.'
+  },
+  {rank:4,tier:'s',tags:['tank','caster'],
+   trio:'Shadow Knight / Shaman / Enchanter',nick:'The Charm Reaver',diff:'ex',
+   roles:[['Shadow Knight','tank + snap-aggro + AoE lifetap · Soul Abrasion +200%'],['Shaman','slow + heal + haste + ATK buffs'],['Enchanter','charm + mez + Clarity + runes + slow']],
+   stats:{Survival:88,DPS:89,Sustain:84,Control:90,Solo:88,'Raid D4':86},
+   skill:85,gear:65,
+   race:'Iksar SK primary — regen + scaling AC on the dedicated tank body',
+   desc:'The highest DPS+control ceiling of any S-tier. SK handles snap-aggro and tanking through Shaman slow + Soul Abrasion (+200% lifetap proc damage) self-sustain, freeing both Shaman and Enchanter for pure offense. Enchanter\'s charm pet (with unbreakable-charm AA) is the strongest single-target DPS in the game; Enchanter also layers Clarity (mana), runes (stun shield), mez (add control), and its own slow on top of Shaman slow for full debuff redundancy. When a fight turns elite, SK can hold aggro through pure tanking while Enchanter transitions to mez-lock adds — the build has a genuine answer to every D4 scenario.',
+   pro:'Highest burst DPS ceiling of the S-tier when charm lands (Enchanter charm + Soul Abrasion proc simultaneously). Full debuff redundancy: Shaman slow + Enchanter slow. Mez handles multi-add D4 scenarios no pure-melee build can manage. Soul Abrasion AA returns meaningful HP even after base lifetap nerf.',
+   con:'Requires unbreakable-charm AA before charm mode is reliable on named mobs — pre-AA this is a weaker build. High APM: mez, rune, charm, and SK aggro all demanding simultaneous attention. Confirmed: charm cancels summoned pet — no pet backup during charm mode.'
+  },
+  {rank:5,tier:'a',tags:['caster'],
+   trio:'Cleric / Shaman / Enchanter',nick:'The Immortal Controller',diff:'ex',
+   roles:[['Cleric','best heal + group heal'],['Shaman','slow + heal + DoT'],['Enchanter','charm + mez + runes + Clarity']],
+   stats:{Survival:98,DPS:68,Sustain:90,Control:98,Solo:90,'Raid D4':92},
+   skill:80,gear:45,
+   race:'Ogre Shaman primary — frontal stun immunity vs the D4 add-spike',
+   desc:'Maximum survival and control with charm providing the damage triple-priest builds usually lack. Double healer + slow + mez + runes is the perfect counter to the D3→D4 add-spike and chain-stun combo. Charm pet grinds while two healers\' worth of tools keep you immortal. Nothing in beta handles the D4 multi-add scenario better — drops from S-tier only because raw DPS ceiling is the lowest in this range, making solo clear speed a weakness.',
+   pro:'Lowest death risk in the guide. Mez the adds, rune the stuns, charm grinds the boss. Double-priest redundancy means strip can\'t take both healing layers at once. Best build for players new to D4 who need maximum safety margin.',
+   con:'Slowest clear speed in the top 15. Charm unreliable on named until unbreakable-charm AA is earned. Requires patience and deliberate kill sequencing. Farms slower than every other A-tier+ option.'
+  },
+  {rank:6,tier:'a',tags:['tank','caster'],
+   trio:'Warrior / Cleric / Enchanter',nick:'The Ironclad Charmer',diff:'im',
+   roles:[['Warrior','best raw mitigation + Heroic Leap AoE taunt + zero mana to strip'],['Cleric','best heal'],['Enchanter','charm + mez + Clarity + runes']],
+   stats:{Survival:94,DPS:78,Sustain:84,Control:88,Solo:86,'Raid D4':92},
+   skill:65,gear:80,
+   race:'Ogre Warrior primary — frontal stun immunity; zero mana to strip',
+   desc:'The D4 raid build that has no strippable mana. Warrior carries zero mana — buff-strip literally does nothing to the tank side. Cleric Promise Renewal keeps the Warrior alive indefinitely, and Enchanter handles every scenario the Warrior can\'t: charm provides the DPS engine, mez locks adds, runes absorb chain-stuns, and Clarity self-sustains the Enchanter\'s mana. Warrior Heroic Leap (AoE taunt up to 8 targets) handles the pack scenario. Against D4 chain-stun casters the build has two independent counters: Ogre stun immunity on the tank body + Enchanter runes absorbing stuns that slip through.',
+   pro:'Only build in the top 15 where the tank side is completely immune to buff-strip (zero mana). Ogre stun immunity + Enchanter runes = dual stun-counter. Highest D4 raid score of the A-tier. Warrior Heroic Leap solves pack aggro that pure Enchanter builds struggle with.',
+   con:'Gear-hungry — Warrior mitigation wall requires heavy AC investment to hit its ceiling. Enchanter charm requires the unbreakable-charm AA to be reliable on named. Slower D1–D3 farm speed than SK or Monk builds without a fast DPS body.'
+  },
+  {rank:7,tier:'a',tags:['caster'],
+   trio:'Monk / Shaman / Enchanter',nick:'Speed-Farm Assassin',diff:'ex',
+   roles:[['Monk','top melee DPS + FD'],['Shaman','slow + heal + haste + DoT'],['Enchanter','charm pet + mez + Clarity']],
+   stats:{Survival:72,DPS:92,Sustain:70,Control:85,Solo:86,'Raid D4':75},
+   skill:85,gear:60,
+   race:'Iksar Monk primary — regen + AC on the primary DPS body',
+   desc:'The fastest kill-per-minute of all safe builds. Monk top melee + Enchanter charm pet as a second damage source + Shaman slow/heal/haste backbone. Kills so fast that the missing Promise Renewal rarely matters — slow plus raw clear speed keeps it safe. Mez handles adds; FD resets bad pulls.',
+   pro:'Highest clear speed when charm lands. Monk + charm = two independent damage sources. Shaman haste stacks with Enchanter haste for exceptional DPS. Best D1–D3 XP and loot farmer.',
+   con:'Squishier than Cleric variants on long D4 boss fights. Charm-pet + mez juggling adds significant APM on top of melee positioning.'
+  },
+  {rank:8,tier:'a',tags:['pet','caster'],
+   trio:'Beastlord / Cleric / Enchanter',nick:'The Swiss-Army Pet',diff:'bg',
+   roles:[['Beastlord','Warder pet + slow + melee + Bestial haste'],['Cleric','best heal'],['Enchanter','charm + control + Clarity']],
+   stats:{Survival:85,DPS:75,Sustain:85,Control:82,Solo:90,'Raid D4':80},
+   skill:60,gear:70,
+   race:'Iksar Beastlord — regen + AC feed both you and the Warder simultaneously',
+   desc:'Beastlord is the most self-contained class in the game: Warder pet (now Berserker-class, double-HP), slows, melee DPS, and Bestial haste — all in one body. The one-pet nerf devastated triple-pet builds; Beastlord only ever wanted one pet, so it survived intact. Cleric (best heal) and Enchanter (charm/mez/Clarity) complete a forgiving all-weather package.',
+   pro:'Highest floor for new players — the most forgiving build in the top 15. Pet-tank + double-heal + charm + slow + haste without juggling three demanding class rotations.',
+   con:'Jack-of-all-trades ceiling — tops no single metric. Slow overlap if you prefer also stacking Shaman. Charm pet ceiling trails pure Monk + Enchanter DPS.'
+  },
+  {rank:9,tier:'a',tags:['tank'],
+   trio:'Paladin / Bard / Rogue',nick:'The Stun Cascade',diff:'im',
+   roles:[['Paladin','tank + stun kit + Lay on Hands'],['Bard','auto-haste + mana regen + mez song + resists'],['Rogue','top burst melee DPS + Escape']],
+   stats:{Survival:85,DPS:82,Sustain:80,Control:72,Solo:84,'Raid D4':80},
+   skill:60,gear:65,
+   race:'Ogre Paladin — stun immunity stacks with Paladin\'s own stun kit for a uniquely CC-resistant tank',
+   desc:'The stun-specialist. Paladin\'s full stun kit — the single greatest CC tool in EQL pre-Kunark — is amplified by Bard\'s Overhaste (more attacks means more stun procs per second). Rogue (beta rework: Chaotic Stab autogranted at level 1, new poison system, Escape drops aggro+invisible) brings real melee burst without a dedicated healer class. Lay on Hands is the panic button; Bard mana song ensures Paladin never runs dry on stun mana. Escape (Rogue ability) gives you an independent secondary panic reset alongside Lay on Hands.',
+   pro:'Best stun output of any build — directly counters D4 chain-stun casters by stunning them first. Bard utility is free (no mana, no APM tax). Rogue Escape + Paladin Lay on Hands = two independent survival buttons. Ogre stun immunity on the tank means stuns only flow one way.',
+   con:'No Shaman slow — incoming damage reduction entirely on Paladin mitigation + Bard resists. Healing is Paladin-only (mana-limited vs. Cleric). Lower D4 endurance ceiling than Cleric-backed builds on the longest fights.'
+  },
+  {rank:10,tier:'a',tags:['tank'],
+   trio:'Paladin / Shaman / Monk',nick:'The Stunwall Bruiser',diff:'im',
+   roles:[['Paladin','tank + stun + DPS (reworked)'],['Shaman','slow + heal + haste'],['Monk','top melee DPS']],
+   stats:{Survival:88,DPS:82,Sustain:74,Control:70,Solo:84,'Raid D4':85},
+   skill:65,gear:65,
+   race:'Ogre Shaman primary — frontal stun immunity; Paladin + Monk ride free',
+   desc:'Leans into the Paladin DPS rework (cleric Strike DD line, Instrument of Knives proc, dual proc choices) and brings the one unique tool nobody else has: reliable stuns. Against D4 chain-stun casters, stunning them first is gold. Paladin in Defensive stance provides 50% damage reduction; Lay on Hands is the panic button; Shaman slows/heals/hastes; Monk kills.',
+   pro:'Reliable stuns uniquely counter D4 chain-stun casters. The Paladin DPS rework makes this more viable than it ever was in classic EQ. Lay on Hands is a massive emergency survival button.',
+   con:'Paladin healing is mana-limited next to a pure Cleric. Relies on Shaman for slow. Race options more restrictive than SK builds for the primary class.'
+  },
+  {rank:11,tier:'a',tags:['tank'],
+   trio:'Warrior / Cleric / Monk',nick:'The Unkillable Wall',diff:'bg',
+   roles:[['Warrior','best raw mitigation + Heroic Leap AoE taunt'],['Cleric','best heal'],['Monk','top melee DPS']],
+   stats:{Survival:96,DPS:80,Sustain:80,Control:40,Solo:80,'Raid D4':90},
+   skill:50,gear:88,
+   race:'Ogre Warrior — frontal stun immunity; the literal unmovable wall',
+   desc:'The textbook holy trinity stuffed into one body. Warrior brings the best raw mitigation in the game, Defensive/Striker stances, and Heroic Leap (mass AoE taunt) for packs. Cleric brings Promise Renewal. Monk brings top-end kills. The key edge at D4: the Warrior has NO mana to strip — buff-strip does nothing to a zero-mana tank side.',
+   pro:'Mitigation + Promise Renewal outlasts even the longest D4 fights. Nothing to strip on the tank side. Ogre stun immunity blocks the chain-stun nightmare. Lowest skill floor of the A-tier.',
+   con:'Zero slow, CC, or charm. Lives entirely on heal + mitigation + gear. Pack clears without mez are harder. Feed it AC — this build is gear-hungry.'
+  },
+  {rank:12,tier:'a',tags:['tank','caster'],
+   trio:'Shadow Knight / Necromancer / Shaman',nick:'The Immortal Reaver',diff:'ex',
+   roles:[['Shadow Knight','tank + Reave + Harm Touch'],['Necromancer','DoT + Spellblade lifetaps + pet'],['Shaman','slow + heal + buffs']],
+   stats:{Survival:85,DPS:80,Sustain:90,Control:65,Solo:85,'Raid D4':82},
+   skill:75,gear:65,
+   race:'Iksar SK primary — regen + AC as the sustained attrition backbone',
+   desc:'A closed-loop health system best appreciated in long fights. SK Reave sacrifices health for damage and resets Harm Touch faster. The Spellblade Invocation auto-fires Necromancer lifetaps during melee at reduced mana cost, instantly restoring the health Reave costs. Shaman slow makes incoming damage manageable. Shines brightest in extended D4 encounters where mana economy wins.',
+   pro:'Closed-loop sustain: health is both weapon and resource. Best performance in extended D4 fights. Nec DoT stacking frees the mana pool for critical bursts. Both SK and Nec have independent FD emergency tools.',
+   con:'Complex three-way resource management. Base lifetap scaling nerf limits burst recovery if things go wrong fast — the Soul Abrasion AA (+200% proc damage) helps but doesn\'t replace the old floor-to-ceiling tap-to-full safety net. Weaker in quick burst scenarios vs pure melee builds.'
+  },
+  {rank:13,tier:'a',tags:['caster'],
+   trio:'Monk / Shaman / Necromancer',nick:'The Sustained Rot Brawler',diff:'im',
+   roles:[['Monk','top melee DPS + evasion + FD'],['Shaman','slow + heal + DoT'],['Necromancer','DoT stack + pet + second FD']],
+   stats:{Survival:82,DPS:84,Sustain:80,Control:62,Solo:85,'Raid D4':78},
+   skill:65,gear:58,
+   race:'Iksar Monk primary — regen + AC on the primary melee body',
+   desc:'Methodical attrition. Shaman slow cripples incoming damage to what Monk\'s avoidance math can handle. Nec DoTs steadily melt the boss\'s health pool without burning mana on burst. The unique advantage: double Feign Death (Monk + Nec) — two independent panic buttons anywhere in a deep dungeon.',
+   pro:'Double FD is unmatched for deep-dungeon safety. DoT stacking frees mana for emergencies. Excellent for long farm sessions. Works as a small-group contributor without a dedicated tank body.',
+   con:'Slower burn than melee + Enchanter charm. No true tank means durability leans on Shaman slow and Monk avoidance. Nec pet management adds group complexity.'
+  },
+  {rank:14,tier:'b',tags:['caster'],
+   trio:'Bard / Shaman / Monk',nick:'The Lazy-Genius Utility Build',diff:'bg',
+   roles:[['Bard','auto-sustain — no twisting required'],['Shaman','slow + heal + buffs'],['Monk','top melee DPS + FD']],
+   stats:{Survival:78,DPS:74,Sustain:90,Control:78,Solo:80,'Raid D4':72},
+   skill:30,gear:55,
+   race:'Iksar Monk primary — Bard racials are too thin to spend a primary lock on',
+   desc:'EQL\'s biggest solo QoL change: Bard songs auto-sustain with no twisting required. The Bard passively delivers haste, mana regen, run speed, resists, a slow song, mez, and even charm song — all at once for near-zero APM. Stack with Shaman (slow/heal) and Monk (top DPS) for a low-effort, high-floor build that never runs out of mana.',
+   pro:'Lowest skill floor in the top 15. Passive Bard utility costs almost zero APM. Infinite mana through Bard mana song. Mez and charm available without a dedicated class slot.',
+   con:'Bard amplifies; it doesn\'t carry. Tops no DPS chart. Monk Feign Death breaks active songs — re-sing after every FD. Boss clear speed well below Cleric variants.'
+  },
+  {rank:15,tier:'b',tags:['tank'],
+   trio:'Shadow Knight / Shaman / Berserker',nick:'The Ramping Monster',diff:'im',
+   roles:[['Shadow Knight','tank + snap-aggro + AoE lifetap'],['Shaman','slow + heal + haste'],['Berserker','ramping 2H DPS']],
+   stats:{Survival:84,DPS:85,Sustain:76,Control:55,Solo:80,'Raid D4':82},
+   skill:60,gear:68,
+   race:'Iksar SK or Iksar Shaman primary — lock whichever body gets hit',
+   desc:'The sustained DPS ramper. SK holds aggro and snap-aggros packs with AoE lifetap proc. Shaman slows/heals/hastes. Berserker\'s 2H damage builds over the course of a fight into a ceiling that eventually outscales Monk on truly long encounters — think Plane of Sky endurance bosses.',
+   pro:'Highest sustained DPS ceiling over long boss fights. Excellent for Plane of Sky and endurance-style content. SK AoE lifetap + Shaman slow makes pack farming efficient. Berserker disciplines add burst windows.',
+   con:'Berserker ramp takes time — weak in quick burst scenarios. No mez or charm. Less consistent than Monk options in shorter fights. <strong>Note:</strong> Berserker\'s closed-beta rework is confirmed: Block added, DPS and mitigation both up, two stances confirmed (Striker and Berserker). This build is stronger than its original B-tier rating reflects — reassess after the July 1 open beta.'
+  }
+];
+
+const TRAPS = [
+  {title:'Beastlord / Magician / Necromancer',body:'The undethroned #1 on THJ — three independent geared pets with massive damage shields and lifetaps. EQL gives you one pet, period. This build loses its entire identity. You\'d be stacking three pet classes to summon a single warder. Don\'t.'},
+  {title:'Pure Triple-Melee (e.g. Warrior/Monk/Rogue)',body:'Devs confirmed it\'s viable, then confirmed the obvious: triple-melee has no self-sustain. With no healer-merc, you\'re a glass cannon hoping fights end before you do. Can work with extreme skill and gear, but one mistake ends the run.'},
+  {title:'Two-Handed Berserker Without a Real Tank',body:'Two-handers sit ~150 DPS behind dual-wield. Berserker Stance gives double attack speed (not an accuracy/hit bonus), and Striker Stance delivers 5× skill damage — but Monk still out-hits Berserker in most high-level boss scenarios. Berserker\'s closed-beta buffs (Block, higher DPS/mitigation) improved it, but the core advice holds: pair Berserker with SK or Warrior rather than leading with it solo.'},
+  {title:'Charm Builds Before the Unbreakable-Charm AA',body:'Enchanter charm is the highest DPS in the game with the AA. Without it, charm breaks at the worst possible moments on named mobs and will get you killed mid-fight. Treat the AA as a prerequisite for charm-centric builds, not a luxury.'},
+  {title:'Full Triple-Priest (Cleric/Shaman/Druid)',body:'Triple-priest builds have essentially zero DPS and cannot close fights in any reasonable time window. Charm on the Enchanter solves this; pure triple-priest doesn\'t. You can\'t heal your way through infinite mana attrition without damage.'},
+];
+
+const WATCHES = [
+  {title:'Charm vs. Summoned Pet — RESOLVED',body:'<strong>Confirmed closed-beta finding:</strong> charm counts against the one-pet cap. You cannot maintain a summoned pet and a charmed mob at the same time — the one-active-pet rule covers all pet types. Magician/Cleric/Enchanter (#2) remains S-tier for its mode-switching flexibility, but the theoretical simultaneous-pet-and-charm upside is definitively off the table. Builds that were rated assuming free charm-stacking have been updated accordingly.'},
+  {title:'Druid DPS Lines Landed',body:'<strong>Confirmed:</strong> Druid received two new spell lines in closed beta — both exclusive to damage roles, not a heal line as some early leaks suggested. The Unbound Nature AAs now properly allow crits from DD, instant heal, HoT, and DoT spells. Druid damage ceiling is rising; expect it to challenge the Shaman slot in hybrid DPS/utility builds alongside its existing ports/snare/quad-kite toolkit.'},
+  {title:'Berserker — Most-Changed Class',body:'Confirmed in closed beta: Berserker received Block (new defensive mechanic), a DPS rating bump (88→93), and mitigation improvements (35→43). Two stances confirmed — Striker Stance (5× skill damage) and Berserker Stance (double attack speed, glass-cannon optional). Blood Rune AA adjusted: no longer triggers on normal spell crits. Ranged stance for Ber/Rogue/Ranger still in development — if it ships before launch, it could reshape the melee DPS tier.'},
+  {title:'Cleric Promise Renewal Balance',body:'Promise Renewal survived the closed-beta period without a tune-down as of the June 2026 patch notes. The Cleric dominance assumption remains intact going into the July 1 pre-order beta. If Promise Renewal is adjusted post-launch, Shaman/Druid healer-primary builds gain ground across the entire tier list — watch for this on the July 28 launch day patch notes.'},
+  {title:'Channeler Stance — Confirmed Mechanics',body:'<strong>Confirmed:</strong> Channeler Stance grants casters (Wizard, Enchanter, Cleric, Druid, Shaman) a flat 40% cut to all incoming damage and counts them as off-tanks when no plate tank or Warder pet is present. This is a documented beta mechanic, not a bug — durability scores for pure-caster builds were officially raised to reflect it. Whether it survives the pre-launch balance pass unchanged is still a question; plan around it but re-verify before committing AAs.'},
+  {title:'Major Class Changes — Closed Beta Snapshot',body:'Confirmed in beta patch notes (May–June 2026): Ranger gained Block + parry (mitigation +5), fastcast nukes, and triple attack. Rogue DPS jumped 65→82 with Chaotic Stab autogranted at level 1 (no positional requirement), a completely new poison system, and a confirmed Escape ability (drops aggro + invisibility for 2% endurance). Enchanter slow was the "biggest single calibration error" in pre-beta scoring — it is now properly credited and raises Enchanter value in any build. Warrior confirmed: Heroic Leap (AoE taunt, up to 8 targets, 1250 hatred, 30s CD) and Cleave (hits 3 additional targets on double/triple attacks). Channeler Stance confirmed at flat 40% cut to all incoming damage for casters.'},
+];
+
+const RACES = [
+  {race:'Iksar',racial:'HP Regen · AC +15→+35 scaling · Forage',note:'The survival race. Lock as primary for Monk, Shadow Knight, Beastlord, or Shaman — regen and scaling AC ride on the body that actually gets hit. Default choice for builds #1, 2, 4, 7, 8, 12, 13, 14, 15.'},
+  {race:'Ogre',racial:'Frontal Stun Immunity · Slam',note:'The only innate D4 chain-stun counter. Lock as primary for Warrior, Shaman, or Paladin. Powers tank builds #5 (controller), #6 (Warrior/Cleric/Enc), #9 (Paladin/Bard/Rogue), #10, and #11.'},
+  {race:'Troll',racial:'HP Regen · Slam',note:'Iksar\'s budget twin for evil-aligned melee — regen without the Antonica faction tax. A clean swap anywhere Iksar is listed: SK, Shaman, Beastlord, Warrior.'},
+  {race:'Erudite',racial:'+5 Magic Resist · Deepest mana pool',note:'Caster fuel. Lock as primary for Magician, Cleric, Necromancer, or Wizard — the mana engine behind builds #2 (Cleric), #3 (Magician), and #5 (Cleric/Shaman/Enchanter).'},
+  {race:'Dark Elf',racial:'Hide · Ultravision · High INT',note:'Charm and mez scale with INT. The Enchanter lock for control builds #3, #4, #5, #6, and #7 — if you\'d rather race your Enchanter than your Shaman or primary tank.'},
+  {race:'Froglok',racial:'Broadly playable: Monk / SK / Shaman / Paladin',note:'The headline EQL race change. Froglok joining these four classes opens new options across the tier list — especially solid for Froglok Monk primary in any Monk-anchored build (#1, 2, 7, 13).'},
+  {race:'Half-Elf / Wood Elf',racial:'Infravision · Wood Elf adds Forage + Hide',note:'The Bard\'s only homes (#13) — but in that build you gain more by locking Iksar-Monk and taking Bard free. Bard racials are too thin to spend a primary lock on.'},
+  {race:'Steadfast Will (AA)',racial:'Stun Immunity — ANY race',note:'The great equalizer. No Ogre? Buy this AA and any race gains full stun immunity. Paired with mostly race-unlocked gear, your bloodline is an opener, not a life sentence.'},
+];
+
+/* ===========================
+   CHART GLOBAL DEFAULTS
+   =========================== */
+Chart.defaults.font.family = "'JetBrains Mono', monospace";
+Chart.defaults.color = '#9fa897';
+
+/* ===========================
+   PROGRESS BAR
+   =========================== */
+const pb = document.getElementById('progress-bar');
+window.addEventListener('scroll', ()=>{
+  const h = document.documentElement;
+  pb.style.width = ((h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100) + '%';
+}, {passive:true});
+
+/* ===========================
+   BACK TO TOP
+   =========================== */
+const bt = document.getElementById('back-top');
+window.addEventListener('scroll', ()=>{ bt.classList.toggle('vis', window.scrollY > 600); }, {passive:true});
+
+/* ===========================
+   COUNTDOWN
+   =========================== */
+(function(){
+  const target = new Date('2026-07-01T00:00:00');
+  function tick(){
+    const now = new Date(), diff = target - now;
+    if(diff <= 0){
+      document.getElementById('cd-box').style.display = 'none';
+      document.getElementById('cd-note').innerHTML = '';
+      const lm = document.createElement('p');
+      lm.className = 'live-msg';
+      lm.textContent = '★ BETA IS LIVE — FORGE YOUR LEGEND ★';
+      document.getElementById('countdown-wrap').appendChild(lm);
+      document.getElementById('nav-countdown-text').textContent = 'BETA LIVE';
+      return;
+    }
+    const d = Math.floor(diff/86400000);
+    const h = Math.floor((diff%86400000)/3600000);
+    const m = Math.floor((diff%3600000)/60000);
+    const s = Math.floor((diff%60000)/1000);
+    document.getElementById('cd-d').textContent = String(d).padStart(2,'0');
+    document.getElementById('cd-h').textContent = String(h).padStart(2,'0');
+    document.getElementById('cd-m').textContent = String(m).padStart(2,'0');
+    document.getElementById('cd-s').textContent = String(s).padStart(2,'0');
+    document.getElementById('nav-countdown-text').textContent = `BETA IN ${d}D ${h}H ${m}M`;
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+
+/* ===========================
+   EMBERS
+   =========================== */
+(function(){
+  const host = document.getElementById('embers');
+  for(let i=0;i<22;i++){
+    const e = document.createElement('span');
+    e.className = 'ember';
+    const sz = 2.5+Math.random()*3;
+    e.style.cssText = `left:${Math.random()*100}%;width:${sz}px;height:${sz}px;animation-duration:${5+Math.random()*7}s;animation-delay:${Math.random()*9}s;--drift:${(Math.random()-0.5)*60}px`;
+    host.appendChild(e);
+  }
+})();
+
+/* ===========================
+   SCROLL REVEAL UTIL
+   =========================== */
+const revObs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');revObs.unobserve(e.target);}});
+},{threshold:.1});
+
+/* ===========================
+   LIMITS
+   =========================== */
+(function(){
+  const el = document.getElementById('limits-grid');
+  LIMITS.forEach((l,i)=>{
+    const d = document.createElement('div');
+    d.className = 'lcard';
+    d.style.transitionDelay = (i%4*60)+'ms';
+    d.innerHTML = `<h3>${l.title}</h3><p>${l.body}</p>`;
+    el.appendChild(d);
+    revObs.observe(d);
+  });
+})();
+
+/* ===========================
+   LADDER
+   =========================== */
+(function(){
+  const groups = {s:[],a:[],b:[]};
+  BUILDS.forEach(b=>groups[b.tier].push(b));
+  const el = document.getElementById('ladder-el');
+  ['s','a','b'].forEach((t,ti)=>{
+    const row = document.createElement('div');
+    row.className = `lrow ${t}`;
+    row.style.transitionDelay = (ti*80)+'ms';
+    const chips = groups[t].map(b=>`<a class="lchip" href="#b${b.rank}"><span class="r">#${b.rank}</span>${b.trio}</a>`).join('');
+    row.innerHTML = `<div class="tletter">${t.toUpperCase()}</div><div class="tchips">${chips}</div>`;
+    el.appendChild(row);
+    revObs.observe(row);
+  });
+})();
+
+/* ===========================
+   TRAPS
+   =========================== */
+(function(){
+  const el = document.getElementById('traps-grid');
+  TRAPS.forEach(t=>{
+    const d = document.createElement('div');
+    d.className = 'trap';
+    d.innerHTML = `<h3><i class="fa-solid fa-skull" style="margin-right:8px;opacity:.7;"></i>${t.title}</h3><p>${t.body}</p>`;
+    el.appendChild(d);
+  });
+})();
+
+/* ===========================
+   BETA WATCH
+   =========================== */
+(function(){
+  const el = document.getElementById('watch-grid');
+  WATCHES.forEach(w=>{
+    const d = document.createElement('div');
+    d.className = 'wcard';
+    d.innerHTML = `<h3><i class="fa-solid fa-circle-exclamation" style="margin-right:7px;opacity:.8;"></i>${w.title}</h3><p>${w.body}</p>`;
+    el.appendChild(d);
+  });
+})();
+
+/* ===========================
+   RACE MATRIX
+   =========================== */
+(function(){
+  const el = document.getElementById('race-mat');
+  RACES.forEach(r=>{
+    const d = document.createElement('div');
+    d.className = 'mcard';
+    d.innerHTML = `<h4>${r.race}</h4><div class="racial">${r.racial}</div><p>${r.note}</p>`;
+    el.appendChild(d);
+  });
+})();
+
+/* ===========================
+   BUILD CARDS (with lazy radar)
+   =========================== */
+const builtRadars = new WeakSet();
+function radarCfg(b){
+  const rgb = TC[b.tier];
+  return {
+    type:'radar',
+    data:{labels:AXES,datasets:[{
+      data:AXES.map(a=>b.stats[a]),
+      backgroundColor:`rgba(${rgb},.18)`,borderColor:`rgb(${rgb})`,
+      borderWidth:2,pointBackgroundColor:`rgb(${rgb})`,
+      pointBorderColor:'#0b0f12',pointRadius:3,pointHoverRadius:5
+    }]},
+    options:{responsive:true,maintainAspectRatio:false,
+      animation:{duration:900,easing:'easeOutQuart'},
+      plugins:{legend:{display:false},
+        tooltip:{backgroundColor:'#0b0f12',borderColor:`rgb(${rgb})`,borderWidth:1,
+          titleColor:'#e4d8c0',bodyColor:'#9fa897',padding:9,displayColors:false,
+          callbacks:{title:i=>i[0].label,label:c=>'  '+c.formattedValue+' / 100'}}},
+      scales:{r:{min:0,max:100,beginAtZero:true,
+        grid:{color:'rgba(42,66,88,.4)'},angleLines:{color:'rgba(42,66,88,.5)'},
+        ticks:{display:false,stepSize:25},
+        pointLabels:{color:'#7a8880',font:{size:10.5,family:"'Cinzel',serif"}}}}}
+  };
+}
+
+const cardObs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const card = e.target;
+    if(!builtRadars.has(card)){
+      builtRadars.add(card);
+      const cv = card.querySelector('.radar-box canvas');
+      if(cv && card._build) new Chart(cv.getContext('2d'), radarCfg(card._build));
+      card.querySelectorAll('.dfill,.mfill').forEach(f=>{ f.style.width = f.dataset.w+'%'; });
+    }
+    cardObs.unobserve(card);
+  });
+},{threshold:.2});
+
+(function(){
+  const el = document.getElementById('builds-el');
+  const DIFF_LABEL = {bg:'Beginner',im:'Intermediate',ex:'Expert'};
+  BUILDS.forEach((b,i)=>{
+    const card = document.createElement('article');
+    card.className = `bcard ${b.tier}`;
+    card.id = `b${b.rank}`;
+    card.dataset.tier = b.tier;
+    card.dataset.tags = b.tags.join(',');
+    card.dataset.diff = b.diff;
+    card.style.transitionDelay = ((i%2)*80)+'ms';
+
+    const roles = b.roles.map(r=>`<span class="role"><b>${r[0]}</b> · ${r[1]}</span>`).join('');
+    const diffCls = b.diff;
+
+    card.innerHTML = `
+      <div class="ctop">
+        <div class="rankwrap">
+          <div class="rnum">${b.rank}</div>
+          <div>
+            <div class="trio">${b.trio}</div>
+            <div class="nick">"${b.nick}"</div>
+          </div>
+        </div>
+        <span class="tbadge ${b.tier}">${b.tier.toUpperCase()}-Tier</span>
+      </div>
+      <div class="roles">${roles}</div>
+      <div class="cmid">
+        <div>
+          <div class="radar-box"><canvas></canvas></div>
+          <p class="desc">${b.desc}</p>
+        </div>
+        <div class="sdials">
+          <div class="sdial safe">
+            <div class="dlab">Safety</div>
+            <div class="dval">${b.stats.Survival}</div>
+            <div class="dbar"><div class="dfill" data-w="${b.stats.Survival}"></div></div>
+          </div>
+          <div class="sdial spd">
+            <div class="dlab">Kill Speed</div>
+            <div class="dval">${b.stats.DPS}</div>
+            <div class="dbar"><div class="dfill" data-w="${b.stats.DPS}"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="strength"><b>★ Signature Strength</b>${b.pro}</div>
+      <div class="weakness"><b>▼ The Trade-off</b>${b.con}</div>
+      <div class="meters">
+        <div class="meter sk"><div class="mlab">Skill Demand <span>${b.skill}</span></div><div class="mtrack"><div class="mfill" data-w="${b.skill}"></div></div></div>
+        <div class="meter gk"><div class="mlab">Gear Hunger <span>${b.gear}</span></div><div class="mtrack"><div class="mfill" data-w="${b.gear}"></div></div></div>
+      </div>
+      <div class="chiptray">
+        <div class="race-chip"><b>PRIMARY LOCK ›</b> ${b.race}</div>
+        <div class="diff-chip ${diffCls}"><i class="fa-solid fa-${diffCls==='bg'?'star':diffCls==='im'?'bolt':'skull'}"></i>${DIFF_LABEL[diffCls]}</div>
+      </div>`;
+    el.appendChild(card);
+    card._build = b;
+    cardObs.observe(card);
+    revObs.observe(card);
+  });
+})();
+
+/* ===========================
+   FILTER BAR
+   =========================== */
+document.getElementById('filters').addEventListener('click', ev=>{
+  const btn = ev.target.closest('.fbtn');
+  if(!btn) return;
+  document.querySelectorAll('.fbtn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const f = btn.dataset.f;
+  document.querySelectorAll('.bcard').forEach(c=>{
+    let show = false;
+    if(f==='all') show=true;
+    else if(f==='s'||f==='a'||f==='b') show = c.dataset.tier===f;
+    else if(f==='tank') show = c.dataset.tags.includes('tank');
+    else if(f==='caster') show = c.dataset.tags.includes('caster')||c.dataset.tags.includes('pet');
+    else if(f==='newbie') show = c.dataset.diff==='bg';
+    c.classList.toggle('hidden',!show);
+    if(show && !builtRadars.has(c)){
+      builtRadars.add(c);
+      const cv = c.querySelector('.radar-box canvas');
+      if(cv && c._build){ new Chart(cv.getContext('2d'), radarCfg(c._build)); }
+      c.querySelectorAll('.dfill,.mfill').forEach(f=>{ f.style.width = f.dataset.w+'%'; });
+    }
+  });
+});
+
+/* ===========================
+   BATTLE MAP
+   =========================== */
+(function(){
+  const data = BUILDS.map(b=>({
+    x:b.stats.DPS, y:b.stats.Survival,
+    r: 5 + b.stats.Solo/10,
+    tier:b.tier, label:`#${b.rank} ${b.trio}`, nick:b.nick
+  }));
+  new Chart(document.getElementById('battleMap').getContext('2d'),{
+    type:'bubble',
+    data:{datasets:[{data,
+      backgroundColor:data.map(d=>`rgba(${TC[d.tier]},.22)`),
+      borderColor:data.map(d=>`rgb(${TC[d.tier]})`),
+      borderWidth:2,
+      hoverBackgroundColor:data.map(d=>`rgba(${TC[d.tier]},.44)`)
+    }]},
+    options:{responsive:true,maintainAspectRatio:false,
+      animation:{duration:1200,easing:'easeOutQuart'},
+      layout:{padding:6},
+      plugins:{legend:{display:false},
+        tooltip:{backgroundColor:'#0b0f12',borderColor:'#2a4258',borderWidth:1,
+          titleColor:'#f0cc72',bodyColor:'#9fa897',padding:12,displayColors:false,
+          callbacks:{title:i=>i[0].raw.label,label:c=>['"'+c.raw.nick+'"','DPS '+c.raw.x+'  ·  Survival '+c.raw.y]}}},
+      scales:{
+        x:{min:60,max:100,title:{display:true,text:'KILL SPEED  →',color:'#566170',font:{size:11,family:"'Cinzel',serif"}},
+          grid:{color:'rgba(42,66,88,.28)'},ticks:{color:'#566170',stepSize:10}},
+        y:{min:65,max:100,title:{display:true,text:'SURVIVABILITY  →',color:'#566170',font:{size:11,family:"'Cinzel',serif"}},
+          grid:{color:'rgba(42,66,88,.28)'},ticks:{color:'#566170',stepSize:10}}}}
+  });
+})();
+
+/* ===========================
+   S-TIER OVERLAY COMPARE
+   =========================== */
+(function(){
+  const top = BUILDS.filter(b=>b.tier==='s');
+  const pal = ['240,204,114','93,219,176','208,104,58','122,184,220'];
+  new Chart(document.getElementById('compareRadar').getContext('2d'),{
+    type:'radar',
+    data:{labels:AXES,datasets:top.map((b,i)=>({
+      label:`#${b.rank} ${b.nick}`,
+      data:AXES.map(a=>b.stats[a]),
+      backgroundColor:`rgba(${pal[i]},.12)`,
+      borderColor:`rgb(${pal[i]})`,
+      borderWidth:2,pointBackgroundColor:`rgb(${pal[i]})`,
+      pointRadius:2.5
+    }))},
+    options:{responsive:true,maintainAspectRatio:false,
+      animation:{duration:1100,easing:'easeOutQuart'},
+      plugins:{legend:{position:'bottom',labels:{color:'#9fa897',boxWidth:12,padding:12,
+          font:{size:10.5,family:"'Cinzel',serif"}}},
+        tooltip:{backgroundColor:'#0b0f12',borderColor:'#2a4258',borderWidth:1,
+          titleColor:'#e4d8c0',bodyColor:'#9fa897',displayColors:true}},
+      scales:{r:{min:0,max:100,
+        grid:{color:'rgba(42,66,88,.4)'},angleLines:{color:'rgba(42,66,88,.5)'},
+        ticks:{display:false,stepSize:25},
+        pointLabels:{color:'#7a8880',font:{size:11,family:"'Cinzel',serif"}}}}}
+  });
+})();
+
+/* ===========================
+   NAV SMOOTH HIGHLIGHT
+   =========================== */
+(function(){
+  const sections = document.querySelectorAll('section[id]');
+  const links = document.querySelectorAll('.nav-links a');
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        links.forEach(l=>l.style.color='');
+        const active = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+        if(active) active.style.color='var(--gold-bright)';
+      }
+    });
+  },{rootMargin:'-40% 0px -55% 0px'});
+  sections.forEach(s=>obs.observe(s));
+})();
+</script>
+</body>
+</html>
